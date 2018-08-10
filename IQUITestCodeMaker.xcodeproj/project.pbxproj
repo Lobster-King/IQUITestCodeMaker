@@ -28,19 +28,6 @@
 		BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */; };
 		BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */; };
 		BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */; };
-		BAC7A49A211D2CCB001DC8F0 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */; };
-		BAC7A49B211D2CCB001DC8F0 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */; };
-		BAC7A49C211D2CCB001DC8F0 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */; };
-		BAC7A49D211D2CCB001DC8F0 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */; };
-		BAC7A49E211D2CCB001DC8F0 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */; };
-		BAC7A49F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */; };
-		BAC7A4A0211D2CCB001DC8F0 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */; };
-		BAC7A4A1211D2CCB001DC8F0 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */; };
-		BAC7A4A2211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */; };
-		BAC7A4A3211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */; };
-		BAC7A4A4211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */; };
-		BAC7A4A5211D2CCB001DC8F0 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */; };
-		BAC7A4A6211D2CCB001DC8F0 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,34 +88,6 @@
 		BAC7A45A211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugKeyValueCell.h; sourceTree = "<group>"; };
 		BAC7A45C211D2C3A001DC8F0 /* IQUITestDebugScriptModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugScriptModel.h; sourceTree = "<group>"; };
 		BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugServerInfoCell.m; sourceTree = "<group>"; };
-		BAC7A47C211D2CCB001DC8F0 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
-		BAC7A47D211D2CCB001DC8F0 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
-		BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
-		BAC7A47F211D2CCB001DC8F0 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
-		BAC7A480211D2CCB001DC8F0 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
-		BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
-		BAC7A482211D2CCB001DC8F0 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
-		BAC7A483211D2CCB001DC8F0 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
-		BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
-		BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
-		BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
-		BAC7A487211D2CCB001DC8F0 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
-		BAC7A489211D2CCB001DC8F0 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
-		BAC7A48A211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
-		BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
-		BAC7A48C211D2CCB001DC8F0 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
-		BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
-		BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
-		BAC7A48F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
-		BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
-		BAC7A492211D2CCB001DC8F0 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
-		BAC7A493211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
-		BAC7A494211D2CCB001DC8F0 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
-		BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
-		BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
-		BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
-		BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
-		BAC7A499211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,68 +180,8 @@
 				BAC7A42E211D2C34001DC8F0 /* IQUITestDebugSwitchModel.m */,
 				BAC7A43D211D2C35001DC8F0 /* UIApplication+IQGlobalHook.h */,
 				BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */,
-				BAC7A47A211D2CCB001DC8F0 /* GCDWebServer */,
 			);
 			path = IQUITestCodeMaker;
-			sourceTree = "<group>";
-		};
-		BAC7A47A211D2CCB001DC8F0 /* GCDWebServer */ = {
-			isa = PBXGroup;
-			children = (
-				BAC7A47B211D2CCB001DC8F0 /* Core */,
-				BAC7A488211D2CCB001DC8F0 /* Responses */,
-				BAC7A491211D2CCB001DC8F0 /* Requests */,
-			);
-			path = GCDWebServer;
-			sourceTree = "<group>";
-		};
-		BAC7A47B211D2CCB001DC8F0 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				BAC7A47C211D2CCB001DC8F0 /* GCDWebServerFunctions.h */,
-				BAC7A47D211D2CCB001DC8F0 /* GCDWebServerPrivate.h */,
-				BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */,
-				BAC7A47F211D2CCB001DC8F0 /* GCDWebServerConnection.h */,
-				BAC7A480211D2CCB001DC8F0 /* GCDWebServer.h */,
-				BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */,
-				BAC7A482211D2CCB001DC8F0 /* GCDWebServerHTTPStatusCodes.h */,
-				BAC7A483211D2CCB001DC8F0 /* GCDWebServerResponse.h */,
-				BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */,
-				BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */,
-				BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */,
-				BAC7A487211D2CCB001DC8F0 /* GCDWebServerRequest.h */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		BAC7A488211D2CCB001DC8F0 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				BAC7A489211D2CCB001DC8F0 /* GCDWebServerFileResponse.h */,
-				BAC7A48A211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.h */,
-				BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */,
-				BAC7A48C211D2CCB001DC8F0 /* GCDWebServerDataResponse.h */,
-				BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */,
-				BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */,
-				BAC7A48F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.h */,
-				BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		BAC7A491211D2CCB001DC8F0 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				BAC7A492211D2CCB001DC8F0 /* GCDWebServerDataRequest.h */,
-				BAC7A493211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.h */,
-				BAC7A494211D2CCB001DC8F0 /* GCDWebServerFileRequest.h */,
-				BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */,
-				BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */,
-				BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */,
-				BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */,
-				BAC7A499211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.h */,
-			);
-			path = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,37 +278,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC7A4A6211D2CCB001DC8F0 /* GCDWebServerFileRequest.m in Sources */,
-				BAC7A49C211D2CCB001DC8F0 /* GCDWebServerFunctions.m in Sources */,
 				BAC7A462211D2C3A001DC8F0 /* IQUITestDebugScriptCell.m in Sources */,
 				BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */,
 				BAC7A467211D2C3A001DC8F0 /* IQUITestCodeMakerRubyUnit.m in Sources */,
-				BAC7A4A2211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m in Sources */,
 				BAC7A460211D2C3A001DC8F0 /* IQUITestDebugServerInfoModel.m in Sources */,
-				BAC7A49D211D2CCB001DC8F0 /* GCDWebServer.m in Sources */,
 				BAC7A46C211D2C3A001DC8F0 /* IQUITestCodeMakerJSWDUnit.m in Sources */,
 				BAC7A45E211D2C3A001DC8F0 /* IQUITestOperationEvent.m in Sources */,
 				BAC7A469211D2C3A001DC8F0 /* IQUITestDebugBall.m in Sources */,
-				BAC7A4A0211D2CCB001DC8F0 /* GCDWebServerFileResponse.m in Sources */,
-				BAC7A49A211D2CCB001DC8F0 /* GCDWebServerResponse.m in Sources */,
 				BAC7A466211D2C3A001DC8F0 /* IQUITestDebugKeyValueModel.m in Sources */,
-				BAC7A49F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m in Sources */,
-				BAC7A4A3211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
 				BAC7A473211D2C3A001DC8F0 /* IQUITestCodeGenerator.m in Sources */,
 				BAC7A45F211D2C3A001DC8F0 /* IQUITestCodeMakerPythonUnit.m in Sources */,
 				BAC7A463211D2C3A001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m in Sources */,
-				BAC7A49E211D2CCB001DC8F0 /* GCDWebServerConnection.m in Sources */,
-				BAC7A4A4211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m in Sources */,
 				BAC7A46A211D2C3A001DC8F0 /* IQUITestDebugSwitchCell.m in Sources */,
-				BAC7A4A1211D2CCB001DC8F0 /* GCDWebServerDataResponse.m in Sources */,
 				BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */,
 				BAC7A464211D2C3A001DC8F0 /* IQUITestDebugScriptModel.m in Sources */,
 				BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */,
-				BAC7A4A5211D2CCB001DC8F0 /* GCDWebServerDataRequest.m in Sources */,
 				BAC7A461211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.m in Sources */,
 				BAC7A465211D2C3A001DC8F0 /* IQUITestDebugSwitchModel.m in Sources */,
 				BAC7A468211D2C3A001DC8F0 /* IQUITestCodeMakerFactory.m in Sources */,
-				BAC7A49B211D2CCB001DC8F0 /* GCDWebServerRequest.m in Sources */,
 				BAC7A46F211D2C3A001DC8F0 /* IQUITestCapabilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
