@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Lobster-King/IQUITestCodeMaker.git", :tag => s.version }
   s.source_files = 'IQUITestCodeMaker', 'IQUITestCodeMaker/**/*.{h,m}'
   s.requires_arc = true
-  s.dependency 'GCDWebServer', :git => 'https://github.com/swisspol/GCDWebServer.git'
+  s.dependency 'GCDWebServer'
 end
