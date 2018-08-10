@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAFFC991FED3AF210F8C4A7E /* libPods-IQUITestCodeMaker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C52283157AB2941822867D /* libPods-IQUITestCodeMaker.a */; };
+		BAC7A41F211D2BA1001DC8F0 /* IQUITestCodeMaker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAC7A41C211D2BA1001DC8F0 /* IQUITestCodeMaker.h */; };
+		BAC7A45E211D2C3A001DC8F0 /* IQUITestOperationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A425211D2C34001DC8F0 /* IQUITestOperationEvent.m */; };
+		BAC7A45F211D2C3A001DC8F0 /* IQUITestCodeMakerPythonUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A426211D2C34001DC8F0 /* IQUITestCodeMakerPythonUnit.m */; };
+		BAC7A460211D2C3A001DC8F0 /* IQUITestDebugServerInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A427211D2C34001DC8F0 /* IQUITestDebugServerInfoModel.m */; };
+		BAC7A461211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A428211D2C34001DC8F0 /* IQUITestDebugKeyValueCell.m */; };
+		BAC7A462211D2C3A001DC8F0 /* IQUITestDebugScriptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A429211D2C34001DC8F0 /* IQUITestDebugScriptCell.m */; };
+		BAC7A463211D2C3A001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A42B211D2C34001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m */; };
+		BAC7A464211D2C3A001DC8F0 /* IQUITestDebugScriptModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A42D211D2C34001DC8F0 /* IQUITestDebugScriptModel.m */; };
+		BAC7A465211D2C3A001DC8F0 /* IQUITestDebugSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A42E211D2C34001DC8F0 /* IQUITestDebugSwitchModel.m */; };
+		BAC7A466211D2C3A001DC8F0 /* IQUITestDebugKeyValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A434211D2C35001DC8F0 /* IQUITestDebugKeyValueModel.m */; };
+		BAC7A467211D2C3A001DC8F0 /* IQUITestCodeMakerRubyUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A438211D2C35001DC8F0 /* IQUITestCodeMakerRubyUnit.m */; };
+		BAC7A468211D2C3A001DC8F0 /* IQUITestCodeMakerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A439211D2C35001DC8F0 /* IQUITestCodeMakerFactory.m */; };
+		BAC7A469211D2C3A001DC8F0 /* IQUITestDebugBall.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A43A211D2C35001DC8F0 /* IQUITestDebugBall.m */; };
+		BAC7A46A211D2C3A001DC8F0 /* IQUITestDebugSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A43C211D2C35001DC8F0 /* IQUITestDebugSwitchCell.m */; };
+		BAC7A46C211D2C3A001DC8F0 /* IQUITestCodeMakerJSWDUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */; };
+		BAC7A46F211D2C3A001DC8F0 /* IQUITestCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */; };
+		BAC7A473211D2C3A001DC8F0 /* IQUITestCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */; };
+		BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */; };
+		BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */; };
+		BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */; };
+		BAC7A49A211D2CCB001DC8F0 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */; };
+		BAC7A49B211D2CCB001DC8F0 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */; };
+		BAC7A49C211D2CCB001DC8F0 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */; };
+		BAC7A49D211D2CCB001DC8F0 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */; };
+		BAC7A49E211D2CCB001DC8F0 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */; };
+		BAC7A49F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */; };
+		BAC7A4A0211D2CCB001DC8F0 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */; };
+		BAC7A4A1211D2CCB001DC8F0 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */; };
+		BAC7A4A2211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */; };
+		BAC7A4A3211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */; };
+		BAC7A4A4211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */; };
+		BAC7A4A5211D2CCB001DC8F0 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */; };
+		BAC7A4A6211D2CCB001DC8F0 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAC7A417211D2BA1001DC8F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BAC7A41F211D2BA1001DC8F0 /* IQUITestCodeMaker.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7771CF60D4090766F8055EEB /* Pods-IQUITestCodeMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQUITestCodeMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IQUITestCodeMaker/Pods-IQUITestCodeMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		7C584920E7804B3FCE51D218 /* Pods-IQUITestCodeMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IQUITestCodeMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-IQUITestCodeMaker/Pods-IQUITestCodeMaker.release.xcconfig"; sourceTree = "<group>"; };
+		A9C52283157AB2941822867D /* libPods-IQUITestCodeMaker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IQUITestCodeMaker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC7A419211D2BA1001DC8F0 /* libIQUITestCodeMaker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIQUITestCodeMaker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC7A41C211D2BA1001DC8F0 /* IQUITestCodeMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMaker.h; sourceTree = "<group>"; };
+		BAC7A425211D2C34001DC8F0 /* IQUITestOperationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestOperationEvent.m; sourceTree = "<group>"; };
+		BAC7A426211D2C34001DC8F0 /* IQUITestCodeMakerPythonUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerPythonUnit.m; sourceTree = "<group>"; };
+		BAC7A427211D2C34001DC8F0 /* IQUITestDebugServerInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugServerInfoModel.m; sourceTree = "<group>"; };
+		BAC7A428211D2C34001DC8F0 /* IQUITestDebugKeyValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugKeyValueCell.m; sourceTree = "<group>"; };
+		BAC7A429211D2C34001DC8F0 /* IQUITestDebugScriptCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugScriptCell.m; sourceTree = "<group>"; };
+		BAC7A42B211D2C34001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerJSPromiseUnit.m; sourceTree = "<group>"; };
+		BAC7A42C211D2C34001DC8F0 /* IQUITestDebugSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugSwitchCell.h; sourceTree = "<group>"; };
+		BAC7A42D211D2C34001DC8F0 /* IQUITestDebugScriptModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugScriptModel.m; sourceTree = "<group>"; };
+		BAC7A42E211D2C34001DC8F0 /* IQUITestDebugSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugSwitchModel.m; sourceTree = "<group>"; };
+		BAC7A430211D2C34001DC8F0 /* IQUITestCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeGenerator.h; sourceTree = "<group>"; };
+		BAC7A431211D2C34001DC8F0 /* IQUITestOperationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestOperationEvent.h; sourceTree = "<group>"; };
+		BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerJSPromiseUnit.h; sourceTree = "<group>"; };
+		BAC7A434211D2C35001DC8F0 /* IQUITestDebugKeyValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugKeyValueModel.m; sourceTree = "<group>"; };
+		BAC7A435211D2C35001DC8F0 /* IQUITestDebugServerInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugServerInfoCell.h; sourceTree = "<group>"; };
+		BAC7A438211D2C35001DC8F0 /* IQUITestCodeMakerRubyUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerRubyUnit.m; sourceTree = "<group>"; };
+		BAC7A439211D2C35001DC8F0 /* IQUITestCodeMakerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerFactory.m; sourceTree = "<group>"; };
+		BAC7A43A211D2C35001DC8F0 /* IQUITestDebugBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugBall.m; sourceTree = "<group>"; };
+		BAC7A43B211D2C35001DC8F0 /* IQUITestDebugScriptCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugScriptCell.h; sourceTree = "<group>"; };
+		BAC7A43C211D2C35001DC8F0 /* IQUITestDebugSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugSwitchCell.m; sourceTree = "<group>"; };
+		BAC7A43D211D2C35001DC8F0 /* UIApplication+IQGlobalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+IQGlobalHook.h"; sourceTree = "<group>"; };
+		BAC7A43E211D2C36001DC8F0 /* IQUITestDebugBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugBall.h; sourceTree = "<group>"; };
+		BAC7A43F211D2C36001DC8F0 /* IQUITestCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCapabilities.h; sourceTree = "<group>"; };
+		BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerJSWDUnit.m; sourceTree = "<group>"; };
+		BAC7A444211D2C36001DC8F0 /* IQUITestDebugKeyValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugKeyValueModel.h; sourceTree = "<group>"; };
+		BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCapabilities.m; sourceTree = "<group>"; };
+		BAC7A446211D2C37001DC8F0 /* IQUITestCodeMakerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerFactory.h; sourceTree = "<group>"; };
+		BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeGenerator.m; sourceTree = "<group>"; };
+		BAC7A44E211D2C38001DC8F0 /* IQUITestDebugServerInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugServerInfoModel.h; sourceTree = "<group>"; };
+		BAC7A44F211D2C38001DC8F0 /* IQUITestDebugSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugSwitchModel.h; sourceTree = "<group>"; };
+		BAC7A450211D2C38001DC8F0 /* IQUITestDebugTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugTable.h; sourceTree = "<group>"; };
+		BAC7A451211D2C38001DC8F0 /* IQUITestCodeMakerPythonUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerPythonUnit.h; sourceTree = "<group>"; };
+		BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugTable.m; sourceTree = "<group>"; };
+		BAC7A455211D2C39001DC8F0 /* IQUITestCodeMakerRubyUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerRubyUnit.h; sourceTree = "<group>"; };
+		BAC7A456211D2C39001DC8F0 /* IQUITestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestProtocol.h; sourceTree = "<group>"; };
+		BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+IQGlobalHook.m"; sourceTree = "<group>"; };
+		BAC7A458211D2C39001DC8F0 /* IQUITestCodeMakerJSWDUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerJSWDUnit.h; sourceTree = "<group>"; };
+		BAC7A45A211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugKeyValueCell.h; sourceTree = "<group>"; };
+		BAC7A45C211D2C3A001DC8F0 /* IQUITestDebugScriptModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugScriptModel.h; sourceTree = "<group>"; };
+		BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugServerInfoCell.m; sourceTree = "<group>"; };
+		BAC7A47C211D2CCB001DC8F0 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		BAC7A47D211D2CCB001DC8F0 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		BAC7A47F211D2CCB001DC8F0 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		BAC7A480211D2CCB001DC8F0 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		BAC7A482211D2CCB001DC8F0 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		BAC7A483211D2CCB001DC8F0 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		BAC7A487211D2CCB001DC8F0 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		BAC7A489211D2CCB001DC8F0 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		BAC7A48A211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		BAC7A48C211D2CCB001DC8F0 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		BAC7A48F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		BAC7A492211D2CCB001DC8F0 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		BAC7A493211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		BAC7A494211D2CCB001DC8F0 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		BAC7A499211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAC7A416211D2BA1001DC8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFFC991FED3AF210F8C4A7E /* libPods-IQUITestCodeMaker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071D18DABC4D54DC61430BE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C52283157AB2941822867D /* libPods-IQUITestCodeMaker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0F7F9C10FA222DB37BBCAEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7771CF60D4090766F8055EEB /* Pods-IQUITestCodeMaker.debug.xcconfig */,
+				7C584920E7804B3FCE51D218 /* Pods-IQUITestCodeMaker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAC7A410211D2BA1001DC8F0 = {
+			isa = PBXGroup;
+			children = (
+				BAC7A41B211D2BA1001DC8F0 /* IQUITestCodeMaker */,
+				BAC7A41A211D2BA1001DC8F0 /* Products */,
+				B0F7F9C10FA222DB37BBCAEF /* Pods */,
+				071D18DABC4D54DC61430BE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAC7A41A211D2BA1001DC8F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A419211D2BA1001DC8F0 /* libIQUITestCodeMaker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAC7A41B211D2BA1001DC8F0 /* IQUITestCodeMaker */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A41C211D2BA1001DC8F0 /* IQUITestCodeMaker.h */,
+				BAC7A456211D2C39001DC8F0 /* IQUITestProtocol.h */,
+				BAC7A431211D2C34001DC8F0 /* IQUITestOperationEvent.h */,
+				BAC7A425211D2C34001DC8F0 /* IQUITestOperationEvent.m */,
+				BAC7A43F211D2C36001DC8F0 /* IQUITestCapabilities.h */,
+				BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */,
+				BAC7A430211D2C34001DC8F0 /* IQUITestCodeGenerator.h */,
+				BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */,
+				BAC7A446211D2C37001DC8F0 /* IQUITestCodeMakerFactory.h */,
+				BAC7A439211D2C35001DC8F0 /* IQUITestCodeMakerFactory.m */,
+				BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */,
+				BAC7A42B211D2C34001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m */,
+				BAC7A458211D2C39001DC8F0 /* IQUITestCodeMakerJSWDUnit.h */,
+				BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */,
+				BAC7A451211D2C38001DC8F0 /* IQUITestCodeMakerPythonUnit.h */,
+				BAC7A426211D2C34001DC8F0 /* IQUITestCodeMakerPythonUnit.m */,
+				BAC7A455211D2C39001DC8F0 /* IQUITestCodeMakerRubyUnit.h */,
+				BAC7A438211D2C35001DC8F0 /* IQUITestCodeMakerRubyUnit.m */,
+				BAC7A43E211D2C36001DC8F0 /* IQUITestDebugBall.h */,
+				BAC7A43A211D2C35001DC8F0 /* IQUITestDebugBall.m */,
+				BAC7A450211D2C38001DC8F0 /* IQUITestDebugTable.h */,
+				BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */,
+				BAC7A45A211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.h */,
+				BAC7A428211D2C34001DC8F0 /* IQUITestDebugKeyValueCell.m */,
+				BAC7A444211D2C36001DC8F0 /* IQUITestDebugKeyValueModel.h */,
+				BAC7A434211D2C35001DC8F0 /* IQUITestDebugKeyValueModel.m */,
+				BAC7A43B211D2C35001DC8F0 /* IQUITestDebugScriptCell.h */,
+				BAC7A429211D2C34001DC8F0 /* IQUITestDebugScriptCell.m */,
+				BAC7A45C211D2C3A001DC8F0 /* IQUITestDebugScriptModel.h */,
+				BAC7A42D211D2C34001DC8F0 /* IQUITestDebugScriptModel.m */,
+				BAC7A435211D2C35001DC8F0 /* IQUITestDebugServerInfoCell.h */,
+				BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */,
+				BAC7A44E211D2C38001DC8F0 /* IQUITestDebugServerInfoModel.h */,
+				BAC7A427211D2C34001DC8F0 /* IQUITestDebugServerInfoModel.m */,
+				BAC7A42C211D2C34001DC8F0 /* IQUITestDebugSwitchCell.h */,
+				BAC7A43C211D2C35001DC8F0 /* IQUITestDebugSwitchCell.m */,
+				BAC7A44F211D2C38001DC8F0 /* IQUITestDebugSwitchModel.h */,
+				BAC7A42E211D2C34001DC8F0 /* IQUITestDebugSwitchModel.m */,
+				BAC7A43D211D2C35001DC8F0 /* UIApplication+IQGlobalHook.h */,
+				BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */,
+				BAC7A47A211D2CCB001DC8F0 /* GCDWebServer */,
+			);
+			path = IQUITestCodeMaker;
+			sourceTree = "<group>";
+		};
+		BAC7A47A211D2CCB001DC8F0 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A47B211D2CCB001DC8F0 /* Core */,
+				BAC7A488211D2CCB001DC8F0 /* Responses */,
+				BAC7A491211D2CCB001DC8F0 /* Requests */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		BAC7A47B211D2CCB001DC8F0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A47C211D2CCB001DC8F0 /* GCDWebServerFunctions.h */,
+				BAC7A47D211D2CCB001DC8F0 /* GCDWebServerPrivate.h */,
+				BAC7A47E211D2CCB001DC8F0 /* GCDWebServerResponse.m */,
+				BAC7A47F211D2CCB001DC8F0 /* GCDWebServerConnection.h */,
+				BAC7A480211D2CCB001DC8F0 /* GCDWebServer.h */,
+				BAC7A481211D2CCB001DC8F0 /* GCDWebServerRequest.m */,
+				BAC7A482211D2CCB001DC8F0 /* GCDWebServerHTTPStatusCodes.h */,
+				BAC7A483211D2CCB001DC8F0 /* GCDWebServerResponse.h */,
+				BAC7A484211D2CCB001DC8F0 /* GCDWebServerFunctions.m */,
+				BAC7A485211D2CCB001DC8F0 /* GCDWebServer.m */,
+				BAC7A486211D2CCB001DC8F0 /* GCDWebServerConnection.m */,
+				BAC7A487211D2CCB001DC8F0 /* GCDWebServerRequest.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BAC7A488211D2CCB001DC8F0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A489211D2CCB001DC8F0 /* GCDWebServerFileResponse.h */,
+				BAC7A48A211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.h */,
+				BAC7A48B211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m */,
+				BAC7A48C211D2CCB001DC8F0 /* GCDWebServerDataResponse.h */,
+				BAC7A48D211D2CCB001DC8F0 /* GCDWebServerFileResponse.m */,
+				BAC7A48E211D2CCB001DC8F0 /* GCDWebServerDataResponse.m */,
+				BAC7A48F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.h */,
+				BAC7A490211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		BAC7A491211D2CCB001DC8F0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC7A492211D2CCB001DC8F0 /* GCDWebServerDataRequest.h */,
+				BAC7A493211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.h */,
+				BAC7A494211D2CCB001DC8F0 /* GCDWebServerFileRequest.h */,
+				BAC7A495211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m */,
+				BAC7A496211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m */,
+				BAC7A497211D2CCB001DC8F0 /* GCDWebServerDataRequest.m */,
+				BAC7A498211D2CCB001DC8F0 /* GCDWebServerFileRequest.m */,
+				BAC7A499211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.h */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAC7A418211D2BA1001DC8F0 /* IQUITestCodeMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC7A422211D2BA1001DC8F0 /* Build configuration list for PBXNativeTarget "IQUITestCodeMaker" */;
+			buildPhases = (
+				366D1F02B55276AD593C0271 /* [CP] Check Pods Manifest.lock */,
+				BAC7A415211D2BA1001DC8F0 /* Sources */,
+				BAC7A416211D2BA1001DC8F0 /* Frameworks */,
+				BAC7A417211D2BA1001DC8F0 /* CopyFiles */,
+				C74C1FE88A79C134F253C96E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQUITestCodeMaker;
+			productName = IQUITestCodeMaker;
+			productReference = BAC7A419211D2BA1001DC8F0 /* libIQUITestCodeMaker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAC7A411211D2BA1001DC8F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = lobster;
+				TargetAttributes = {
+					BAC7A418211D2BA1001DC8F0 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = BAC7A414211D2BA1001DC8F0 /* Build configuration list for PBXProject "IQUITestCodeMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BAC7A410211D2BA1001DC8F0;
+			productRefGroup = BAC7A41A211D2BA1001DC8F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAC7A418211D2BA1001DC8F0 /* IQUITestCodeMaker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		366D1F02B55276AD593C0271 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IQUITestCodeMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C74C1FE88A79C134F253C96E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQUITestCodeMaker/Pods-IQUITestCodeMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAC7A415211D2BA1001DC8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC7A4A6211D2CCB001DC8F0 /* GCDWebServerFileRequest.m in Sources */,
+				BAC7A49C211D2CCB001DC8F0 /* GCDWebServerFunctions.m in Sources */,
+				BAC7A462211D2C3A001DC8F0 /* IQUITestDebugScriptCell.m in Sources */,
+				BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */,
+				BAC7A467211D2C3A001DC8F0 /* IQUITestCodeMakerRubyUnit.m in Sources */,
+				BAC7A4A2211D2CCB001DC8F0 /* GCDWebServerStreamedResponse.m in Sources */,
+				BAC7A460211D2C3A001DC8F0 /* IQUITestDebugServerInfoModel.m in Sources */,
+				BAC7A49D211D2CCB001DC8F0 /* GCDWebServer.m in Sources */,
+				BAC7A46C211D2C3A001DC8F0 /* IQUITestCodeMakerJSWDUnit.m in Sources */,
+				BAC7A45E211D2C3A001DC8F0 /* IQUITestOperationEvent.m in Sources */,
+				BAC7A469211D2C3A001DC8F0 /* IQUITestDebugBall.m in Sources */,
+				BAC7A4A0211D2CCB001DC8F0 /* GCDWebServerFileResponse.m in Sources */,
+				BAC7A49A211D2CCB001DC8F0 /* GCDWebServerResponse.m in Sources */,
+				BAC7A466211D2C3A001DC8F0 /* IQUITestDebugKeyValueModel.m in Sources */,
+				BAC7A49F211D2CCB001DC8F0 /* GCDWebServerErrorResponse.m in Sources */,
+				BAC7A4A3211D2CCB001DC8F0 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				BAC7A473211D2C3A001DC8F0 /* IQUITestCodeGenerator.m in Sources */,
+				BAC7A45F211D2C3A001DC8F0 /* IQUITestCodeMakerPythonUnit.m in Sources */,
+				BAC7A463211D2C3A001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m in Sources */,
+				BAC7A49E211D2CCB001DC8F0 /* GCDWebServerConnection.m in Sources */,
+				BAC7A4A4211D2CCB001DC8F0 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				BAC7A46A211D2C3A001DC8F0 /* IQUITestDebugSwitchCell.m in Sources */,
+				BAC7A4A1211D2CCB001DC8F0 /* GCDWebServerDataResponse.m in Sources */,
+				BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */,
+				BAC7A464211D2C3A001DC8F0 /* IQUITestDebugScriptModel.m in Sources */,
+				BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */,
+				BAC7A4A5211D2CCB001DC8F0 /* GCDWebServerDataRequest.m in Sources */,
+				BAC7A461211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.m in Sources */,
+				BAC7A465211D2C3A001DC8F0 /* IQUITestDebugSwitchModel.m in Sources */,
+				BAC7A468211D2C3A001DC8F0 /* IQUITestCodeMakerFactory.m in Sources */,
+				BAC7A49B211D2CCB001DC8F0 /* GCDWebServerRequest.m in Sources */,
+				BAC7A46F211D2C3A001DC8F0 /* IQUITestCapabilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAC7A420211D2BA1001DC8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAC7A421211D2BA1001DC8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAC7A423211D2BA1001DC8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7771CF60D4090766F8055EEB /* Pods-IQUITestCodeMaker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAC7A424211D2BA1001DC8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C584920E7804B3FCE51D218 /* Pods-IQUITestCodeMaker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAC7A414211D2BA1001DC8F0 /* Build configuration list for PBXProject "IQUITestCodeMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC7A420211D2BA1001DC8F0 /* Debug */,
+				BAC7A421211D2BA1001DC8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC7A422211D2BA1001DC8F0 /* Build configuration list for PBXNativeTarget "IQUITestCodeMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC7A423211D2BA1001DC8F0 /* Debug */,
+				BAC7A424211D2BA1001DC8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAC7A411211D2BA1001DC8F0 /* Project object */;
+}
