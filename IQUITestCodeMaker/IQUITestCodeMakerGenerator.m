@@ -14,7 +14,7 @@
 #import <objc/message.h>
 #import <UIKit/UIKit.h>
 #import "IQUITestDebugBall.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 
 static IQUITestCodeMakerGenerator *persistent = nil;
 static NSString *const kAutoSetIdentifier   = @"[A]";
@@ -798,10 +798,10 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     [[NSUserDefaults standardUserDefaults] setObject:mutaleCap forKey:kCapabilitiesKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    IQUITestCapabilities *capInstance = [[IQUITestCapabilities alloc]init];
+    IQUITestCodeMakerCapabilities *capInstance = [[IQUITestCodeMakerCapabilities alloc]init];
     capInstance.driverType = IQUITestDriverAppium;
     
-    IQUITestCapabilities *cap = [[IQUITestCapabilities alloc]init];
+    IQUITestCodeMakerCapabilities *cap = [[IQUITestCodeMakerCapabilities alloc]init];
     cap.driverType = IQUITestDriverAppium;
     
     [self removeAllScript];
@@ -822,10 +822,10 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 //        [[NSFileManager defaultManager] removeItemAtPath:scriptDir error:NULL];
         [self removeAllScript];
         
-        IQUITestCapabilities *capInstance = [[IQUITestCapabilities alloc]init];
+        IQUITestCodeMakerCapabilities *capInstance = [[IQUITestCodeMakerCapabilities alloc]init];
         capInstance.driverType = IQUITestDriverAppium;
         
-        IQUITestCapabilities *cap = [[IQUITestCapabilities alloc]init];
+        IQUITestCodeMakerCapabilities *cap = [[IQUITestCodeMakerCapabilities alloc]init];
         cap.driverType = IQUITestDriverAppium;
         
         IQUITestCodeMakerFactory *factory = [IQUITestCodeMakerFactory handleTaskUnitWithCap:cap];

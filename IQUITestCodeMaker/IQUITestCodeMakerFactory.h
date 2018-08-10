@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class IQUITestCapabilities,IQUITestOperationEvent;
+@class IQUITestCodeMakerCapabilities,IQUITestOperationEvent;
 
 @interface IQUITestCodeMakerFactory : NSObject
 
-@property (nonatomic, strong, readonly) IQUITestCapabilities *cap;
+@property (nonatomic, strong, readonly) IQUITestCodeMakerCapabilities *cap;
 @property (nonatomic, copy, readonly) NSString *scriptPath;
 @property (nonatomic, assign) NSInteger eventIndex;
 @property (nonatomic, strong) NSMutableArray <IQUITestOperationEvent*>*eventQueue;
@@ -21,7 +21,7 @@
 @property (nonatomic, assign) NSInteger endCodeFlag;
 
 + (IQUITestCodeMakerFactory *)handleTaskUnit;
-+ (IQUITestCodeMakerFactory *)handleTaskUnitWithCap:(IQUITestCapabilities *)cap;
++ (IQUITestCodeMakerFactory *)handleTaskUnitWithCap:(IQUITestCodeMakerCapabilities *)cap;
 - (void)produceCodeWithOperationEvent:(IQUITestOperationEvent *)op;
 - (void)storeProductCode:(NSString *)code;
 - (void)convertEvetQueueToScript;

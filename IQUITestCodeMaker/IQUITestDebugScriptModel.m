@@ -8,7 +8,7 @@
 
 #import "IQUITestDebugScriptModel.h"
 #import "IQUITestCodeMakerGenerator.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import "IQUITestCodeMakerFactory.h"
 
 @interface IQUITestDebugScriptModel ()

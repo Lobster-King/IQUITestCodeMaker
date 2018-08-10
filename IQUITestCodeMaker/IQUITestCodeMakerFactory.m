@@ -7,12 +7,12 @@
 //
 
 #import "IQUITestCodeMakerFactory.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import "IQUITestOperationEvent.h"
 
 @interface IQUITestCodeMakerFactory ()
 
-@property (nonatomic, strong, readwrite) IQUITestCapabilities *cap;
+@property (nonatomic, strong, readwrite) IQUITestCodeMakerCapabilities *cap;
 @property (nonatomic, copy, readwrite) NSString *scriptPath;
 @property (nonatomic, strong) dispatch_semaphore_t semaphore;
 
@@ -34,10 +34,10 @@
 }
 
 + (IQUITestCodeMakerFactory *)handleTaskUnit {
-    return [self handleTaskUnitWithCap:[IQUITestCapabilities new]];/*default cap*/
+    return [self handleTaskUnitWithCap:[IQUITestCodeMakerCapabilities new]];/*default cap*/
 }
 
-+ (IQUITestCodeMakerFactory *)handleTaskUnitWithCap:(IQUITestCapabilities *)cap {
++ (IQUITestCodeMakerFactory *)handleTaskUnitWithCap:(IQUITestCodeMakerCapabilities *)cap {
     NSDictionary *unitMap = [self unitStructureMap];
     NSString *unitString = @"";
     if (cap.driverType == 0) {

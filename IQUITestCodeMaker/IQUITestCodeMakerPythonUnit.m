@@ -7,7 +7,7 @@
 //
 
 #import "IQUITestCodeMakerPythonUnit.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import "IQUITestOperationEvent.h"
 
 @implementation IQUITestCodeMakerPythonUnit

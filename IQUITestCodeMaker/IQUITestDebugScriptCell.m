@@ -10,7 +10,7 @@
 #import "IQUITestDebugScriptModel.h"
 #import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestCodeMakerFactory.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 
 @interface IQUITestDebugSegmentControl : UISegmentedControl
 

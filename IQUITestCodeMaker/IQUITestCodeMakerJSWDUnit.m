@@ -7,7 +7,7 @@
 //
 
 #import "IQUITestCodeMakerJSWDUnit.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import "IQUITestOperationEvent.h"
 
 @implementation IQUITestCodeMakerJSWDUnit

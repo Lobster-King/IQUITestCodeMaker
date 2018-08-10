@@ -7,7 +7,7 @@
 //
 
 #import "IQUITestCodeMakerRubyUnit.h"
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import "IQUITestOperationEvent.h"
 
 @implementation IQUITestCodeMakerRubyUnit
