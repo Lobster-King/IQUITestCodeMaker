@@ -1,5 +1,5 @@
 //
-//  IQUITestCodeGenerator.h
+//  IQUITestCodeMakerGenerator.h
 //  IQUITestCodeMaker
 //
 //  Created by lobster on 2018/8/4.
@@ -14,7 +14,7 @@
 
 void IQRuntimeMethodExchange(Class aClass, SEL oldSEL, SEL newSEL);
 
-@interface IQUITestCodeGenerator : NSObject<IQUITestProtocol,GCDWebServerDelegate>
+@interface IQUITestCodeMakerGenerator : NSObject<IQUITestProtocol,GCDWebServerDelegate>
 
 @property (nonatomic, strong, readonly) IQUITestCodeMakerFactory *factory;
 @property (nonatomic, strong, readonly) GCDWebServer *webServer;

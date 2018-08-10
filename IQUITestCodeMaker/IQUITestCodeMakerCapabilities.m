@@ -1,18 +1,18 @@
 //
-//  IQUITestCapabilities.m
+//  IQUITestCodeMakerCapabilities.m
 //  IQUITestCodeMaker
 //
 //  Created by lobster on 2018/8/4.
 //  Copyright © 2018年 lobster. All rights reserved.
 //
 
-#import "IQUITestCapabilities.h"
+#import "IQUITestCodeMakerCapabilities.h"
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
 static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 
-@implementation IQUITestCapabilities
+@implementation IQUITestCodeMakerCapabilities
 
 - (instancetype)init {
     if (self = [super init]) {

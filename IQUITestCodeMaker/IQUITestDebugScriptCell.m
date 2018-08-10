@@ -8,7 +8,7 @@
 
 #import "IQUITestDebugScriptCell.h"
 #import "IQUITestDebugScriptModel.h"
-#import "IQUITestCodeGenerator.h"
+#import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestCodeMakerFactory.h"
 #import "IQUITestCapabilities.h"
 
@@ -52,7 +52,7 @@
 - (void)updateViewWithViewModel:(IQUITestDebugScriptModel *)model {
     self.sciptModel = model;
     
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     NSInteger selectIndex = [self.itemsArray indexOfObject:persistent.factory.cap.appiumCap.appiumLanguage];
     self.segmentControl.selectedSegmentIndex = selectIndex;
     
@@ -77,7 +77,7 @@
 }
 
 - (void)reloadCodeText {
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     NSString *script = [NSString stringWithContentsOfFile:persistent.factory.scriptPath encoding:NSUTF8StringEncoding error:NULL];
     self.codeText.text = script;
 }

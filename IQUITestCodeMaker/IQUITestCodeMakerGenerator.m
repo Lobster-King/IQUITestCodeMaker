@@ -1,12 +1,12 @@
 //
-//  IQUITestCodeGenerator.m
+//  IQUITestCodeMakerGenerator.m
 //  IQUITestCodeMaker
 //
 //  Created by lobster on 2018/8/4.
 //  Copyright © 2018年 lobster. All rights reserved.
 //
 
-#import "IQUITestCodeGenerator.h"
+#import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestCodeMaker.h"
 #import "IQUITestOperationEvent.h"
 #import "IQUITestCodeMakerFactory.h"
@@ -16,7 +16,7 @@
 #import "IQUITestDebugBall.h"
 #import "IQUITestCapabilities.h"
 
-static IQUITestCodeGenerator *persistent = nil;
+static IQUITestCodeMakerGenerator *persistent = nil;
 static NSString *const kAutoSetIdentifier   = @"[A]";
 static NSString *const kManualIdentifier    = @"[M]";
 
@@ -36,7 +36,7 @@ void IQTapTask(id target) {
     op.eventType = IQUIEventTap;
     op.identifier= [target accessibilityIdentifier];
     
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent.factory produceCodeWithOperationEvent:op];
 }
 
@@ -128,7 +128,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     op.eventType = IQUIEventTap;
     op.identifier= backItem.title;
 
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent.factory produceCodeWithOperationEvent:op];
     
     return ret;
@@ -740,21 +740,21 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 
 @end
 
-#pragma mark--IQUITestCodeGenerator--
+#pragma mark--IQUITestCodeMakerGenerator--
 
-@interface IQUITestCodeGenerator ()
+@interface IQUITestCodeMakerGenerator ()
 
 @property (nonatomic, strong, readwrite) IQUITestCodeMakerFactory *factory;
 @property (nonatomic, strong, readwrite) GCDWebServer *webServer;
 
 @end
 
-@implementation IQUITestCodeGenerator
+@implementation IQUITestCodeMakerGenerator
 
 + (instancetype)sharePersistent {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        persistent = [[IQUITestCodeGenerator alloc]init];
+        persistent = [[IQUITestCodeMakerGenerator alloc]init];
         
     });
     return persistent;
@@ -775,7 +775,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 //    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
 //    op.eventType = IQEventResignActive;
 //
-//    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+//    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
 //    [persistent.factory produceCodeWithOperationEvent:op];
 }
 
@@ -783,7 +783,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 //    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
 //    op.eventType = IQEventWillTerminate;
 //
-//    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+//    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
 //    [persistent.factory produceCodeWithOperationEvent:op];
 }
 

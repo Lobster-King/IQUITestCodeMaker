@@ -7,7 +7,7 @@
 //
 
 #import "IQUITestDebugSwitchModel.h"
-#import "IQUITestCodeGenerator.h"
+#import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestOperationEvent.h"
 #import "IQUITestCodeMakerFactory.h"
 
@@ -24,7 +24,7 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 + (IQUITestDebugSwitchModel *)viewModelWithState:(BOOL)state {
     IQUITestDebugSwitchModel *model = [[IQUITestDebugSwitchModel alloc]init];
     model.title = @"重新开启录制会清除上次缓存脚本";
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     IQUITestOperationEvent *op = persistent.factory.eventQueue.lastObject;
     if (op && (op.eventType != IQEventEndCode)) {
         model.swOn = YES;
@@ -35,7 +35,7 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 }
 
 - (void)updateSwitchModel {
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     IQUITestOperationEvent *op = persistent.factory.eventQueue.lastObject;
     if (op && (op.eventType != IQEventEndCode)) {
         self.swOn = YES;
@@ -45,7 +45,7 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 }
 
 - (void)handleSwitchState:(BOOL)state withCallBack:(IQHandleSwitchBlock)callBack {
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent handleRecordControlEventWithState:state];
     
     if (callBack) {

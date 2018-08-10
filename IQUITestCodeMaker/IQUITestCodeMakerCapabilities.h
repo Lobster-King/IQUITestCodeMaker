@@ -1,5 +1,5 @@
 //
-//  IQUITestCapabilities.h
+//  IQUITestCodeMakerCapabilities.h
 //  IQUITestCodeMaker
 //
 //  Created by lobster on 2018/8/4.
@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger,IQUITestDriverType ) {
 
 @class IQAppiumCapabilities,IQMacacaCapabilities;
 
-@interface IQUITestCapabilities : NSObject
+@interface IQUITestCodeMakerCapabilities : NSObject
 
 @property (nonatomic, assign) IQUITestDriverType    driverType;
 @property (nonatomic, strong) IQAppiumCapabilities  *appiumCap;

@@ -23,8 +23,8 @@
 		BAC7A469211D2C3A001DC8F0 /* IQUITestDebugBall.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A43A211D2C35001DC8F0 /* IQUITestDebugBall.m */; };
 		BAC7A46A211D2C3A001DC8F0 /* IQUITestDebugSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A43C211D2C35001DC8F0 /* IQUITestDebugSwitchCell.m */; };
 		BAC7A46C211D2C3A001DC8F0 /* IQUITestCodeMakerJSWDUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */; };
-		BAC7A46F211D2C3A001DC8F0 /* IQUITestCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */; };
-		BAC7A473211D2C3A001DC8F0 /* IQUITestCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */; };
+		BAC7A46F211D2C3A001DC8F0 /* IQUITestCodeMakerCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A445211D2C37001DC8F0 /* IQUITestCodeMakerCapabilities.m */; };
+		BAC7A473211D2C3A001DC8F0 /* IQUITestCodeMakerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A44D211D2C38001DC8F0 /* IQUITestCodeMakerGenerator.m */; };
 		BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */; };
 		BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */; };
 		BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */; };
@@ -58,7 +58,7 @@
 		BAC7A42C211D2C34001DC8F0 /* IQUITestDebugSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugSwitchCell.h; sourceTree = "<group>"; };
 		BAC7A42D211D2C34001DC8F0 /* IQUITestDebugScriptModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugScriptModel.m; sourceTree = "<group>"; };
 		BAC7A42E211D2C34001DC8F0 /* IQUITestDebugSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugSwitchModel.m; sourceTree = "<group>"; };
-		BAC7A430211D2C34001DC8F0 /* IQUITestCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeGenerator.h; sourceTree = "<group>"; };
+		BAC7A430211D2C34001DC8F0 /* IQUITestCodeMakerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerGenerator.h; sourceTree = "<group>"; };
 		BAC7A431211D2C34001DC8F0 /* IQUITestOperationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestOperationEvent.h; sourceTree = "<group>"; };
 		BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerJSPromiseUnit.h; sourceTree = "<group>"; };
 		BAC7A434211D2C35001DC8F0 /* IQUITestDebugKeyValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugKeyValueModel.m; sourceTree = "<group>"; };
@@ -70,12 +70,12 @@
 		BAC7A43C211D2C35001DC8F0 /* IQUITestDebugSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugSwitchCell.m; sourceTree = "<group>"; };
 		BAC7A43D211D2C35001DC8F0 /* UIApplication+IQGlobalHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+IQGlobalHook.h"; sourceTree = "<group>"; };
 		BAC7A43E211D2C36001DC8F0 /* IQUITestDebugBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugBall.h; sourceTree = "<group>"; };
-		BAC7A43F211D2C36001DC8F0 /* IQUITestCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCapabilities.h; sourceTree = "<group>"; };
+		BAC7A43F211D2C36001DC8F0 /* IQUITestCodeMakerCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerCapabilities.h; sourceTree = "<group>"; };
 		BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerJSWDUnit.m; sourceTree = "<group>"; };
 		BAC7A444211D2C36001DC8F0 /* IQUITestDebugKeyValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugKeyValueModel.h; sourceTree = "<group>"; };
-		BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCapabilities.m; sourceTree = "<group>"; };
+		BAC7A445211D2C37001DC8F0 /* IQUITestCodeMakerCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerCapabilities.m; sourceTree = "<group>"; };
 		BAC7A446211D2C37001DC8F0 /* IQUITestCodeMakerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerFactory.h; sourceTree = "<group>"; };
-		BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeGenerator.m; sourceTree = "<group>"; };
+		BAC7A44D211D2C38001DC8F0 /* IQUITestCodeMakerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerGenerator.m; sourceTree = "<group>"; };
 		BAC7A44E211D2C38001DC8F0 /* IQUITestDebugServerInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugServerInfoModel.h; sourceTree = "<group>"; };
 		BAC7A44F211D2C38001DC8F0 /* IQUITestDebugSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugSwitchModel.h; sourceTree = "<group>"; };
 		BAC7A450211D2C38001DC8F0 /* IQUITestDebugTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugTable.h; sourceTree = "<group>"; };
@@ -144,10 +144,10 @@
 				BAC7A456211D2C39001DC8F0 /* IQUITestProtocol.h */,
 				BAC7A431211D2C34001DC8F0 /* IQUITestOperationEvent.h */,
 				BAC7A425211D2C34001DC8F0 /* IQUITestOperationEvent.m */,
-				BAC7A43F211D2C36001DC8F0 /* IQUITestCapabilities.h */,
-				BAC7A445211D2C37001DC8F0 /* IQUITestCapabilities.m */,
-				BAC7A430211D2C34001DC8F0 /* IQUITestCodeGenerator.h */,
-				BAC7A44D211D2C38001DC8F0 /* IQUITestCodeGenerator.m */,
+				BAC7A43F211D2C36001DC8F0 /* IQUITestCodeMakerCapabilities.h */,
+				BAC7A445211D2C37001DC8F0 /* IQUITestCodeMakerCapabilities.m */,
+				BAC7A430211D2C34001DC8F0 /* IQUITestCodeMakerGenerator.h */,
+				BAC7A44D211D2C38001DC8F0 /* IQUITestCodeMakerGenerator.m */,
 				BAC7A446211D2C37001DC8F0 /* IQUITestCodeMakerFactory.h */,
 				BAC7A439211D2C35001DC8F0 /* IQUITestCodeMakerFactory.m */,
 				BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */,
@@ -286,7 +286,7 @@
 				BAC7A45E211D2C3A001DC8F0 /* IQUITestOperationEvent.m in Sources */,
 				BAC7A469211D2C3A001DC8F0 /* IQUITestDebugBall.m in Sources */,
 				BAC7A466211D2C3A001DC8F0 /* IQUITestDebugKeyValueModel.m in Sources */,
-				BAC7A473211D2C3A001DC8F0 /* IQUITestCodeGenerator.m in Sources */,
+				BAC7A473211D2C3A001DC8F0 /* IQUITestCodeMakerGenerator.m in Sources */,
 				BAC7A45F211D2C3A001DC8F0 /* IQUITestCodeMakerPythonUnit.m in Sources */,
 				BAC7A463211D2C3A001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m in Sources */,
 				BAC7A46A211D2C3A001DC8F0 /* IQUITestDebugSwitchCell.m in Sources */,
@@ -296,7 +296,7 @@
 				BAC7A461211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.m in Sources */,
 				BAC7A465211D2C3A001DC8F0 /* IQUITestDebugSwitchModel.m in Sources */,
 				BAC7A468211D2C3A001DC8F0 /* IQUITestCodeMakerFactory.m in Sources */,
-				BAC7A46F211D2C3A001DC8F0 /* IQUITestCapabilities.m in Sources */,
+				BAC7A46F211D2C3A001DC8F0 /* IQUITestCodeMakerCapabilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

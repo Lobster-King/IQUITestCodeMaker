@@ -7,7 +7,7 @@
 //
 
 #import "IQUITestDebugScriptModel.h"
-#import "IQUITestCodeGenerator.h"
+#import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestCapabilities.h"
 #import "IQUITestCodeMakerFactory.h"
 
@@ -28,7 +28,7 @@
 - (void)handleSegmentControlSelected:(NSInteger)selectIndex withCallBack:(IQHandleScriptBlock)cabllBack {
     /*update local cap cache*/
     NSArray * items = @[@"Ruby",@"Python",@"JSWdio",@"JSPromise"];
-    IQUITestCodeGenerator *persistent = [IQUITestCodeGenerator sharePersistent];
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent handleConvertTaskWithIdentifier:items[selectIndex]];
     
     if (cabllBack) {
