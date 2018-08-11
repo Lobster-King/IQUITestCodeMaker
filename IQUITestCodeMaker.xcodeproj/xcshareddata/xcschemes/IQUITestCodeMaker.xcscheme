@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAC7A418211D2BA1001DC8F0"
-               BuildableName = "libIQUITestCodeMaker.a"
-               BlueprintName = "IQUITestCodeMaker"
-               ReferencedContainer = "container:IQUITestCodeMaker.xcodeproj">
+               BlueprintIdentifier = "B60DC8FBE19DDB8AF853A37ED8CF8A15"
+               BuildableName = "libGCDWebServer.a"
+               BlueprintName = "GCDWebServer"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B60DC8FBE19DDB8AF853A37ED8CF8A15"
-               BuildableName = "libGCDWebServer.a"
-               BlueprintName = "GCDWebServer"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "BAC7A418211D2BA1001DC8F0"
+               BuildableName = "libIQUITestCodeMaker.a"
+               BlueprintName = "IQUITestCodeMaker"
+               ReferencedContainer = "container:IQUITestCodeMaker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
