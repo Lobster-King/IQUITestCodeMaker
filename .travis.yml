@@ -1,14 +1,11 @@
 osx_image: xcode9 
 language: objective-c
-xcode_sdk: iphonesimulator 
-cache: cocoapods 
-xcode_scheme: IQUITestCodeMaker
-podfile: IQUITestCodeMaker/Podfile 
+notifications:
+  email: zhiwei.geek@gmail.com
 env: 
 global: 
 - LANG=en_US.UTF-8 
 - LC_ALL=en_US.UTF-8 
-- XCODE_WORKSPACE=IQUITestCodeMaker.xcworkspace
 matrix: 
 - SCHEME="IQUITestCodeMaker" 
 before_install: 
