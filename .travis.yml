@@ -1,5 +1,7 @@
 osx_image: xcode9 
 language: objective-c 
+xcode_xcworkspace: IQUITestCodeMaker
+xcode_scheme: IQUITestCodeMaker
 podfile: IQUITestCodeMaker/Podfile 
 env: 
 global: 
