@@ -1,4 +1,3 @@
 language: objective-c
-xcode_project: IQUITestCodeMaker.xcodeproj
-xcode_scheme: IQUITestCodeMaker
 osx_image: xcode9.4
+xcode_scheme: IQUITestCodeMaker
