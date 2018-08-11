@@ -15,9 +15,9 @@ matrix:
 before_install: 
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet  
 - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet 
-- pod install --repo-update 
+- pod install 
 script: 
 - set -o pipefail 
-- xcodebuild -workspace $TRAVIS_XCODE_WORKSPACE -scheme $TRAVIS_XCODE_SCHEME -sdk $TRAVIS_XCODE_SDK build | xcpretty
+- xcodebuild -workspace "$XCODE_WORKSPACE" -scheme "$SCHEME" | xcpretty -c 
 after_success: 
 - sleep 5 
