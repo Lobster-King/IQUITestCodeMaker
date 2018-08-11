@@ -1,6 +1,13 @@
-before_install:
-  - gem install bundler
-
 language: objective-c
 osx_image: xcode9.4
-xcode_scheme: IQUITestCodeMaker
+before_install:
+    - env
+    - locale
+    - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+    - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+    - pod --version
+    - pod setup --silent > /dev/null
+    - pod repo update --silent
+    - xcpretty --version
+    - xcodebuild -version
+    - xcodebuild -showsdks
