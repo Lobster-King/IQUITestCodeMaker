@@ -1,11 +1,12 @@
 osx_image: xcode9 
 language: objective-c 
 cache: cocoapods  
+podfile: /Podfile 
 env: 
 global: 
 - LANG=en_US.UTF-8 
 - LC_ALL=en_US.UTF-8 
-- XCODE_WORKSPACE=IQUITestCodeMaker.xcworkspace 
+- XCODE_WORKSPACE=IQUITestCodeMaker/IQUITestCodeMaker.xcworkspace 
 matrix: 
 - SCHEME="IQUITestCodeMaker" 
 before_install: 
