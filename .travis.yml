@@ -1,7 +1,7 @@
 osx_image: xcode9 
 language: objective-c 
 cache: cocoapods 
-podfile: Podfile 
+podfile: IQUITestCodeMaker/Podfile 
 env: 
 global: 
 - LANG=en_US.UTF-8 
