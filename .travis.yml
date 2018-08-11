@@ -5,7 +5,7 @@ env:
 global: 
 - LANG=en_US.UTF-8 
 - LC_ALL=en_US.UTF-8 
-- XCODE_WORKSPACE=IQUITestCodeMaker/IQUITestCodeMaker.xcworkspace 
+- XCODE_WORKSPACE=IQUITestCodeMaker.xcworkspace 
 matrix: 
 - SCHEME="IQUITestCodeMaker" 
 before_install: 
