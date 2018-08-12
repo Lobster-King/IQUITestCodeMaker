@@ -37,9 +37,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'Example' do
-
     pod 'IQUITestCodeMaker',:git => 'https://github.com/Lobster-King/IQUITestCodeMaker.git',:configurations => ['Debug']
-    
 end
 ```
 ### pod install
@@ -65,4 +63,7 @@ hybrid and mobile web and desktop apps. We support simulators (iOS), emulators
 
 # Roadmap
 
+* more languages support.
+* macaca support.
+* ui element location strategy.
 
