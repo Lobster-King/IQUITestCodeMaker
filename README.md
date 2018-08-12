@@ -49,7 +49,7 @@ $ pod install
 
 # Debug Ball
 
-https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/Demo.gif
+![Demo gif](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/Demo.gif)
 
 
 # About appium
