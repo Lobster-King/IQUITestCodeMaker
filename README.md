@@ -1,4 +1,4 @@
-#OverView
+# OverView
 
 [![Build Status](https://travis-ci.org/Lobster-King/IQUITestCodeMaker.svg?branch=master)](https://travis-ci.org/Lobster-King/IQUITestCodeMaker)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
@@ -9,5 +9,5 @@
 
 Generating iOS UI test script code without lanuching Appium Desktop or using inspector .
 
-#About appium
+# About appium
 [How to install appium ?](https://github.com/appium/appium/blob/master/docs/en/about-appium/getting-started.md)
