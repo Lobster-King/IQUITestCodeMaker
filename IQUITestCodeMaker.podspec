@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "IQUITestCodeMaker"
   s.version      = "1.0.0"
-  s.summary      = "IQUITestCodeMaker is a strong tool kit for generating script code without lanuching appium desktop or using inspector."
+  s.summary      = "IQUITestCodeMaker is a modern and lightweight tool for generating iOS UI test script codes automatically without lanuching Appium Desktop or using inspector."
   s.homepage     = "https://github.com/Lobster-King/IQUITestCodeMaker/wiki/IQUITestCodeMaker-Documents"
   s.license      = "MIT"
   s.authors      = { 'lobster' => 'zhiwei.geek@gmail.com'}
