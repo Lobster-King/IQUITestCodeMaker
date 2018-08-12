@@ -8,13 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "IQUITestProtocol.h"
-#import "GCDWebServer.h"
 
-@class IQUITestCodeMakerFactory;
+@class IQUITestCodeMakerFactory,GCDWebServer;
 
 void IQRuntimeMethodExchange(Class aClass, SEL oldSEL, SEL newSEL);
 
-@interface IQUITestCodeMakerGenerator : NSObject<IQUITestProtocol,GCDWebServerDelegate>
+@interface IQUITestCodeMakerGenerator : NSObject<IQUITestProtocol>
 
 @property (nonatomic, strong, readonly) IQUITestCodeMakerFactory *factory;
 @property (nonatomic, strong, readonly) GCDWebServer *webServer;

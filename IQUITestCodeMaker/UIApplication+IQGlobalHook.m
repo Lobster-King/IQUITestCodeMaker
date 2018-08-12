@@ -10,6 +10,7 @@
 #import "IQUITestCodeMakerGenerator.h"
 #import "IQUITestCodeMaker.h"
 #import "IQUITestProtocol.h"
+#import "GCDWebServer.h"
 
 @implementation UIApplication (IQGlobalHook)
 

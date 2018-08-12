@@ -15,6 +15,7 @@
 #import <UIKit/UIKit.h>
 #import "IQUITestDebugBall.h"
 #import "IQUITestCodeMakerCapabilities.h"
+#import "GCDWebServer.h"
 
 static IQUITestCodeMakerGenerator *persistent = nil;
 static NSString *const kAutoSetIdentifier   = @"[A]";
@@ -742,7 +743,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 
 #pragma mark--IQUITestCodeMakerGenerator--
 
-@interface IQUITestCodeMakerGenerator ()
+@interface IQUITestCodeMakerGenerator ()<GCDWebServerDelegate>
 
 @property (nonatomic, strong, readwrite) IQUITestCodeMakerFactory *factory;
 @property (nonatomic, strong, readwrite) GCDWebServer *webServer;

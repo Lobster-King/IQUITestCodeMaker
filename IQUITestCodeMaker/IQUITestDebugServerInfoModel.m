@@ -8,6 +8,7 @@
 
 #import "IQUITestDebugServerInfoModel.h"
 #import "IQUITestCodeMakerGenerator.h"
+#import "GCDWebServer.h"
 
 @interface IQUITestDebugServerInfoModel ()
 
