@@ -49,7 +49,8 @@ $ pod install
 
 # Debug Ball
 
-![]
+![https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/Demo.gif]
+
 
 # About appium
 Appium is an open source, cross-platform test automation tool for native,
