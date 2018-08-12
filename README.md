@@ -67,3 +67,11 @@ hybrid and mobile web and desktop apps. We support simulators (iOS), emulators
 * macaca support.
 * ui element location strategy.
 
+# Have a problem?
+
+You can contact me in the following ways
+
+* PRs or Issues.
+* Email :[zhiwei.geek@gmail.com](zhiwei.geek@gmail.com)
+
+
