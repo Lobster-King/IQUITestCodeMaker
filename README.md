@@ -4,8 +4,8 @@
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IQUITestCodeMaker.svg)](http://cocoapods.org/pods/IQUITestCodeMaker)
 [![Github All Releases](https://img.shields.io/github/downloads/Lobster-King/IQUITestCodeMaker/total.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
-![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)
-![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
+[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)](http://cocoapods.org/pods/IQUITestCodeMaker)
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](http://cocoapods.org/pods/IQUITestCodeMaker)
 ![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/lobster_geek)
 
