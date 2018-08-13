@@ -106,6 +106,7 @@
                                 @"Python"   :@"py",
                                 @"JSWdio"   :@"js",
                                 @"JSPromise":@"js",
+                                @"Java"     :@"java",
                                 };
     NSString *suf = nil;
     if (self.cap.driverType == 0) {

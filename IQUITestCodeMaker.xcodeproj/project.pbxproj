@@ -28,6 +28,7 @@
 		BAC7A474211D2C3A001DC8F0 /* IQUITestDebugTable.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A452211D2C38001DC8F0 /* IQUITestDebugTable.m */; };
 		BAC7A477211D2C3A001DC8F0 /* UIApplication+IQGlobalHook.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A457211D2C39001DC8F0 /* UIApplication+IQGlobalHook.m */; };
 		BAC7A479211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */; };
+		BAF70C4C2121A027000DB87A /* IQUITestCodeMakerJavaUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF70C4B2121A027000DB87A /* IQUITestCodeMakerJavaUnit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +89,8 @@
 		BAC7A45A211D2C3A001DC8F0 /* IQUITestDebugKeyValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugKeyValueCell.h; sourceTree = "<group>"; };
 		BAC7A45C211D2C3A001DC8F0 /* IQUITestDebugScriptModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQUITestDebugScriptModel.h; sourceTree = "<group>"; };
 		BAC7A45D211D2C3A001DC8F0 /* IQUITestDebugServerInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQUITestDebugServerInfoCell.m; sourceTree = "<group>"; };
+		BAF70C4A2121A027000DB87A /* IQUITestCodeMakerJavaUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IQUITestCodeMakerJavaUnit.h; sourceTree = "<group>"; };
+		BAF70C4B2121A027000DB87A /* IQUITestCodeMakerJavaUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQUITestCodeMakerJavaUnit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,14 +153,16 @@
 				BAC7A44D211D2C38001DC8F0 /* IQUITestCodeMakerGenerator.m */,
 				BAC7A446211D2C37001DC8F0 /* IQUITestCodeMakerFactory.h */,
 				BAC7A439211D2C35001DC8F0 /* IQUITestCodeMakerFactory.m */,
-				BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */,
-				BAC7A42B211D2C34001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m */,
-				BAC7A458211D2C39001DC8F0 /* IQUITestCodeMakerJSWDUnit.h */,
-				BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */,
-				BAC7A451211D2C38001DC8F0 /* IQUITestCodeMakerPythonUnit.h */,
-				BAC7A426211D2C34001DC8F0 /* IQUITestCodeMakerPythonUnit.m */,
 				BAC7A455211D2C39001DC8F0 /* IQUITestCodeMakerRubyUnit.h */,
 				BAC7A438211D2C35001DC8F0 /* IQUITestCodeMakerRubyUnit.m */,
+				BAC7A451211D2C38001DC8F0 /* IQUITestCodeMakerPythonUnit.h */,
+				BAC7A426211D2C34001DC8F0 /* IQUITestCodeMakerPythonUnit.m */,
+				BAC7A458211D2C39001DC8F0 /* IQUITestCodeMakerJSWDUnit.h */,
+				BAC7A441211D2C36001DC8F0 /* IQUITestCodeMakerJSWDUnit.m */,
+				BAC7A433211D2C35001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.h */,
+				BAC7A42B211D2C34001DC8F0 /* IQUITestCodeMakerJSPromiseUnit.m */,
+				BAF70C4A2121A027000DB87A /* IQUITestCodeMakerJavaUnit.h */,
+				BAF70C4B2121A027000DB87A /* IQUITestCodeMakerJavaUnit.m */,
 				BAC7A43E211D2C36001DC8F0 /* IQUITestDebugBall.h */,
 				BAC7A43A211D2C35001DC8F0 /* IQUITestDebugBall.m */,
 				BAC7A450211D2C38001DC8F0 /* IQUITestDebugTable.h */,
@@ -297,6 +302,7 @@
 				BAC7A465211D2C3A001DC8F0 /* IQUITestDebugSwitchModel.m in Sources */,
 				BAC7A468211D2C3A001DC8F0 /* IQUITestCodeMakerFactory.m in Sources */,
 				BAC7A46F211D2C3A001DC8F0 /* IQUITestCodeMakerCapabilities.m in Sources */,
+				BAF70C4C2121A027000DB87A /* IQUITestCodeMakerJavaUnit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

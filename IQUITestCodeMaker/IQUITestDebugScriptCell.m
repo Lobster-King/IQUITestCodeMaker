@@ -107,7 +107,7 @@
 
 - (NSArray *)itemsArray {
     if (!_itemsArray) {
-        _itemsArray = @[@"Ruby",@"Python",@"JSWdio",@"JSPromise"];
+        _itemsArray = @[@"Ruby",@"Python",@"JSWdio",@"JSPromise",@"Java"];
     }
     return _itemsArray;
 }

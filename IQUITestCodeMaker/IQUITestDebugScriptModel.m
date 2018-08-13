@@ -27,7 +27,7 @@
 
 - (void)handleSegmentControlSelected:(NSInteger)selectIndex withCallBack:(IQHandleScriptBlock)cabllBack {
     /*update local cap cache*/
-    NSArray * items = @[@"Ruby",@"Python",@"JSWdio",@"JSPromise"];
+    NSArray * items = @[@"Ruby",@"Python",@"JSWdio",@"JSPromise",@"Java"];
     IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent handleConvertTaskWithIdentifier:items[selectIndex]];
     

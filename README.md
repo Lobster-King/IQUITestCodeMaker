@@ -25,7 +25,7 @@ IQUITestCodeMaker is a modern and lightweight tool  for generating iOS UI test s
 - [x] Python
 - [x] JavaScript(webdriverio)
 - [x] JavaScript(Promise)
-- [ ] Java
+- [x] Java
 - [ ] Objective-C
 - [ ] Swift
 
