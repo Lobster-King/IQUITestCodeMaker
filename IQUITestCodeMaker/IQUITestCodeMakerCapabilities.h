@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger,IQUITestDriverType ) {
 @property (nonatomic, copy) NSString *platformName;/*iOS*/
 @property (nonatomic, copy) NSString *platformVersion;/*9.3~11.4*/
 @property (nonatomic, copy) NSString *deviceName;/*iPhone 6s ..*/
+//@property (nonatomic, copy) NSString *udid;/*device id*/
 @property (nonatomic, copy) NSString *app;/*app path*/
 @property (nonatomic, copy) NSString *serverAddress;/*127.0.0.1 default*/
 @property (nonatomic, copy) NSString *serverPort;/*4723 default*/
