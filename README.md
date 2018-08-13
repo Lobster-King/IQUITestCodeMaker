@@ -2,10 +2,12 @@
 
 [![Build Status](https://travis-ci.org/Lobster-King/IQUITestCodeMaker.svg?branch=master)](https://travis-ci.org/Lobster-King/IQUITestCodeMaker)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
+[![CocoaPods](https://img.shields.io/cocoapods/v/IQUITestCodeMaker.svg)](http://cocoapods.org/pods/IQUITestCodeMaker)
 [![Github All Releases](https://img.shields.io/github/downloads/Lobster-King/IQUITestCodeMaker/total.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
 ![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)
 ![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)
 ![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/lobster_geek)
 
 IQUITestCodeMaker is a modern and lightweight tool  for generating iOS UI test script codes automatically without lanuching Appium Desktop or using inspector.
 
@@ -62,7 +64,7 @@ $ pod install
 
 # About appium
 Appium is an open source, cross-platform test automation tool for native,
-hybrid and mobile web and desktop apps. We support simulators (iOS), emulators
+hybrid and mobile web and desktop apps. It support simulators (iOS), emulators
 (Android), and real devices (iOS, Android, Windows, Mac).
 
 ## Documentation
