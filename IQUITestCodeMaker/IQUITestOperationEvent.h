@@ -26,5 +26,6 @@ typedef NS_ENUM(NSInteger,IQEventType ) {
 
 @property (nonatomic, assign) IQEventType eventType;
 @property (nonatomic, copy)   NSString *identifier;
+@property (nonatomic, copy)   NSString *value;
 
 @end
