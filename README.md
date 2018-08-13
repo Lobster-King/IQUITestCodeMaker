@@ -84,6 +84,6 @@ hybrid and mobile web and desktop apps. It support simulators (iOS), emulators
 You can contact me in the following ways
 
 * PRs or Issues.
-* Email :[zhiwei.geek@gmail.com](zhiwei.geek@gmail.com)
+* Email :[zhiwei.geek@gmail.com](mailto:zhiwei.geek@gmail.com)
 
 
