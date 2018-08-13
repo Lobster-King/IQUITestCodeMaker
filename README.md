@@ -17,6 +17,16 @@ IQUITestCodeMaker is a modern and lightweight tool  for generating iOS UI test s
 * For performance reasons,you are advised to turn off IQUITestCodeMaker in release mode.
 * With the debug ball support,you can export script file to desktop easily.
 
+## Support Languages
+
+- [x] Ruby
+- [x] Python
+- [x] JavaScript(webdriverio)
+- [x] JavaScript(Promise)
+- [ ] Java
+- [ ] Objective-C
+- [ ] Swift
+
 ## Reference
 * [Generating UI test label automatically for iOS](https://github.com/yulingtianxia/TBUIAutoTest)
 * [Appium Server and Inspector in Desktop GUIs for Mac, Windows, and Linux](https://github.com/appium/appium-desktop)
