@@ -1,7 +1,7 @@
 # Overview
 
 [![Build Status](https://travis-ci.org/Lobster-King/IQUITestCodeMaker.svg?branch=master)](https://travis-ci.org/Lobster-King/IQUITestCodeMaker)
-[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IQUITestCodeMaker.svg)](http://cocoapods.org/pods/IQUITestCodeMaker)
 [![Github All Releases](https://img.shields.io/github/downloads/Lobster-King/IQUITestCodeMaker/total.svg)](https://github.com/Lobster-King/IQUITestCodeMaker)
 [![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)](http://cocoapods.org/pods/IQUITestCodeMaker)
