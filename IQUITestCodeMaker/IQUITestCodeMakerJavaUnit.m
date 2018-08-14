@@ -50,6 +50,11 @@
             
         }
             break;
+            case IQUIEventSendKey:
+        {
+            [self produceSendKeyCodeWithOperationEvent:op];
+        }
+            break;
             case IQEventEndCode:
         {
             [self produceEndCodeOnce];
@@ -69,6 +74,17 @@
     MobileElement el%ld = (MobileElement) driver.findElementByAccessibilityId(\"%@\");\n\
     el%ld.click();\n",self.eventIndex,op.identifier,self.eventIndex];
     [self storeProductCode:tapCode];
+}
+
+- (void)produceSendKeyCodeWithOperationEvent:(IQUITestOperationEvent *)op {
+    if (!self.isConverting) {
+        [self.eventQueue addObject:op];
+    }
+    self.eventIndex++;
+    NSString *sendCode = [NSString stringWithFormat:@"\n\
+    MobileElement el%ld = (MobileElement) driver.findElementByAccessibilityId(\"%@\");\n\
+    el%ld.sendKeys(\"%@\");\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
+    [self storeProductCode:sendCode];
 }
 
 - (void)produceTemplateCodeOnce {

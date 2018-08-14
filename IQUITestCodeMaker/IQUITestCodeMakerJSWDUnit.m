@@ -50,6 +50,11 @@
             
         }
             break;
+        case IQUIEventSendKey:
+        {
+            [self produceSendKeyCodeWithOperationEvent:op];
+        }
+            break;
         case IQEventEndCode:
         {
             [self produceEndCodeOnce];
@@ -69,6 +74,17 @@
   .element(\"~%@\")\n\
   .click()\n",op.identifier];
     [self storeProductCode:tapCode];
+}
+
+- (void)produceSendKeyCodeWithOperationEvent:(IQUITestOperationEvent *)op {
+    if (!self.isConverting) {
+        [self.eventQueue addObject:op];
+    }
+    self.eventIndex++;
+    NSString *sendKeyCode = [NSString stringWithFormat:@"\n\
+  .element(\"~%@\")\n\
+  .sendKeys(\"%@\")\n",op.identifier,op.value];
+    [self storeProductCode:sendKeyCode];
 }
 
 - (void)produceTemplateCodeOnce {

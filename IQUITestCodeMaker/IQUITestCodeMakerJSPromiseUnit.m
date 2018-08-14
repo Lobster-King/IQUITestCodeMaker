@@ -50,6 +50,12 @@
             
         }
             break;
+        case IQUIEventSendKey:
+        {
+            [self produceSendKeyCodeWithOperationEvent:op];
+        }
+            break;
+            
         case IQEventEndCode:
         {
             [self produceEndCodeOnce];
@@ -69,6 +75,17 @@
   let el%ld = await driver.elementByAccessibilityId(\"%@\");\n\
   await el%ld.click()\n",self.eventIndex,op.identifier,self.eventIndex];
     [self storeProductCode:tapCode];
+}
+
+- (void)produceSendKeyCodeWithOperationEvent:(IQUITestOperationEvent *)op {
+    if (!self.isConverting) {
+        [self.eventQueue addObject:op];
+    }
+    self.eventIndex++;
+    NSString *sendKeyCode = [NSString stringWithFormat:@"\n\
+  let el%ld = await driver.elementByAccessibilityId(\"%@\");\n\
+  await el%ld.type(\"%@\")\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
+    [self storeProductCode:sendKeyCode];
 }
 
 - (void)produceTemplateCodeOnce {
