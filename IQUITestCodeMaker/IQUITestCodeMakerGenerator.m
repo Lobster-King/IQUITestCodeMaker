@@ -46,6 +46,12 @@ void IQSendKeyTask(id target) {
     op.eventType = IQUIEventSendKey;
     op.identifier = [target accessibilityIdentifier];
     
+    if ([target isKindOfClass:[UITextField class]]) {
+        op.value = [(UITextField *)target text];
+    } else if ([target isKindOfClass:[UITextView class]]) {
+        op.value = [(UITextView *)target text];
+    }
+    
     IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent.factory produceCodeWithOperationEvent:op];
 }

@@ -79,8 +79,8 @@
         [self.eventQueue addObject:op];
     }
     self.eventIndex++;
-    NSString *tapCode = [NSString stringWithFormat:@"el%ld = driver.find_element(:accessibility_id, \"%@\")\nel%ld.send_keys '%@'\n\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
-    [self storeProductCode:tapCode];
+    NSString *sendKeyCode = [NSString stringWithFormat:@"el%ld = driver.find_element(:accessibility_id, \"%@\")\nel%ld.send_keys '%@'\n\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
+    [self storeProductCode:sendKeyCode];
 }
 
 - (void)produceTemplateCodeOnce {

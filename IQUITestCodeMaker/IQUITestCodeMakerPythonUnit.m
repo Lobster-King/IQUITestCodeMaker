@@ -70,7 +70,7 @@
         [self.eventQueue addObject:op];
     }
     self.eventIndex++;
-    NSString *tapCode = [NSString stringWithFormat:@"el%ld = driver.find_element_by_accessibility_id(\"%@\")\nel%ld.click()\n",self.eventIndex,op.identifier,self.eventIndex];
+    NSString *tapCode = [NSString stringWithFormat:@"el%ld = driver.find_element_by_accessibility_id(\"%@\")\nel%ld.click()\n\n",self.eventIndex,op.identifier,self.eventIndex];
     [self storeProductCode:tapCode];
 }
 
@@ -79,7 +79,7 @@
         [self.eventQueue addObject:op];
     }
     self.eventIndex++;
-    NSString *sendKeyCode = [NSString stringWithFormat:@"el%ld = driver.find_element_by_accessibility_id(\"%@\")\nel%ld.send_keys('%@')\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
+    NSString *sendKeyCode = [NSString stringWithFormat:@"el%ld = driver.find_element_by_accessibility_id(\"%@\")\nel%ld.send_keys('%@')\n\n",self.eventIndex,op.identifier,self.eventIndex,op.value];
     [self storeProductCode:sendKeyCode];
 }
 
