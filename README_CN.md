@@ -1,5 +1,7 @@
 # 总览
 
+[英文文档](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/README.md)
+
 IQUITestCodeMaker是一款轻量级的、无侵入性的自动生成UI测试脚本的工具，目前支持Appium相关脚本代码的自动生成，后续会支持对阿里Macaca相关主流框架脚本代码的自动生成。
 
 Tester：对于测试朋友来讲，你需要做的就是让你们的iOSer把该框架通过pod引入工程即可。你不需要启动Appium Desktop或者启动inspector服务去编写UI测试脚本，你只需要点点点，然后利用Debug工具把脚本导出。
