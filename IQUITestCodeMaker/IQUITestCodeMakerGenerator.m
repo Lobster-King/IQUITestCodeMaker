@@ -41,6 +41,15 @@ void IQTapTask(id target) {
     [persistent.factory produceCodeWithOperationEvent:op];
 }
 
+void IQSendKeyTask(id target) {
+    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
+    op.eventType = IQUIEventSendKey;
+    op.identifier = [target accessibilityIdentifier];
+    
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
+    [persistent.factory produceCodeWithOperationEvent:op];
+}
+
 void IQQuitTask(void) {
     
 }
@@ -110,6 +119,49 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     }
     [swizzledMethods addObject:methodName];
 }
+
+#pragma mark--UITextField--
+@implementation UITextField (IQRunTimeHook)
+
++ (void)IQHook {
+    IQRuntimeMethodExchange([UITextField class], @selector(setDelegate:), @selector(IQ_setDelegate:));
+}
+
+- (void)IQ_setDelegate:(id<UITextFieldDelegate>)delegate {
+    [self IQ_setDelegate:delegate];
+    
+    if (DebugView(NSStringFromClass([self class]))) {
+        return;
+    }
+    
+    /*hook @selector(tableView:cellForRowAtIndexPath:)*/
+    if (![delegate respondsToSelector:@selector(textFieldDidEndEditing:)]) {
+        return;
+    }
+    
+    Method originMethod = class_getInstanceMethod([delegate class], @selector(textFieldDidEndEditing:));
+    IMP    originImp    = method_getImplementation(originMethod);
+    Method currentMethod = class_getInstanceMethod([self class], @selector(IQ_textFieldDidEndEditing:));
+    IMP    currentImp    = method_getImplementation(currentMethod);
+    
+    class_addMethod([delegate class], @selector(IQ_textFieldDidEndEditing:), currentImp, method_getTypeEncoding(currentMethod));
+    
+    BOOL didAddMethod = class_addMethod([delegate class], @selector(textFieldDidEndEditing:), currentImp, method_getTypeEncoding(currentMethod));
+    
+    if (didAddMethod) {
+        class_replaceMethod([delegate class], @selector(IQ_textFieldDidEndEditing:), originImp, method_getTypeEncoding(originMethod));
+    } else {
+        IQRuntimeMethodExchange([delegate class], @selector(textFieldDidEndEditing:), @selector(IQ_textFieldDidEndEditing:));
+    }
+    
+}
+
+- (void)IQ_textFieldDidEndEditing:(UITextField *)textField {
+    [self IQ_textFieldDidEndEditing:textField];
+    IQSendKeyTask(textField);
+}
+
+@end
 
 #pragma mark--UINavigationController--
 
@@ -769,6 +821,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     [UIView IQHook];
     [UIImage IQHook];
     [UINavigationController IQHook];
+    [UITextField IQHook];
 }
 
 - (void)handleApplicationWillResignActiveNotification {
