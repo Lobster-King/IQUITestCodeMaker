@@ -182,11 +182,11 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     
 #warning 系统自带导航需要在此截获事件
     UINavigationItem *backItem = navigationBar.backItem;
-
+    
     IQUITestOperationEvent *op = [IQUITestOperationEvent new];
     op.eventType = IQUIEventTap;
     op.identifier= backItem.title;
-
+    
     IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
     [persistent.factory produceCodeWithOperationEvent:op];
     
@@ -478,9 +478,9 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
         UIImageView *imageView = (UIImageView *)self;
         NSString *imageName = imageView.image.accessibilityIdentifier;
         NSInteger index = 0;
-//        if ([[self gestureRecognizers] count]) {
-            index = [self indexOfCurrentViewInSuperView:self];
-//        }
+        //        if ([[self gestureRecognizers] count]) {
+        index = [self indexOfCurrentViewInSuperView:self];
+        //        }
         NSString *hierarchy = [NSString stringWithFormat:@"%@[%ld]",NSStringFromClass([self class]),index];
         identifierJsonFormat = [identifierJsonFormat stringByAppendingString:[NSString stringWithFormat:@"%@{%@:%@,%@:%ld,%@:%@,%@:%@}",kAutoSetIdentifier,kViewHierarchy,hierarchy,kViewTag,tag,kViewIvarName,ivarName,kViewImageName,imageName]];
     } else {
@@ -722,8 +722,8 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
         class_replaceMethod([delegate class], @selector(IQ_collectionView:didSelectItemAtIndexPath:), didSelectOriginImp, method_getTypeEncoding(didSelectOriginMethod));
     } else {
         IQRuntimeMethodExchange([delegate class],
-                            @selector(collectionView:didSelectItemAtIndexPath:),
-                            @selector(IQ_collectionView:didSelectItemAtIndexPath:));
+                                @selector(collectionView:didSelectItemAtIndexPath:),
+                                @selector(IQ_collectionView:didSelectItemAtIndexPath:));
     }
     
 }
@@ -832,19 +832,19 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 
 - (void)handleApplicationWillResignActiveNotification {
     /*系统级弹框会触发应用willResignActive操作*/
-//    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
-//    op.eventType = IQEventResignActive;
-//
-//    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
-//    [persistent.factory produceCodeWithOperationEvent:op];
+    //    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
+    //    op.eventType = IQEventResignActive;
+    //
+    //    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
+    //    [persistent.factory produceCodeWithOperationEvent:op];
 }
 
 - (void)handleApplicationWillTerminateNotification {
-//    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
-//    op.eventType = IQEventWillTerminate;
-//
-//    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
-//    [persistent.factory produceCodeWithOperationEvent:op];
+    //    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
+    //    op.eventType = IQEventWillTerminate;
+    //
+    //    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
+    //    [persistent.factory produceCodeWithOperationEvent:op];
 }
 
 - (void)handleApplicationDidReceiveMemoryWarningNotification {
@@ -876,10 +876,10 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 - (void)handleRecordControlEventWithState:(BOOL)state {
     if (state) {
         /*开启，移除本地脚本缓存*/
-//        NSArray *directoryPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
-//        NSString *documentDirectory = [directoryPaths objectAtIndex:0];
-//        NSString *scriptDir = [documentDirectory stringByAppendingString:@"/IQScripts"];
-//        [[NSFileManager defaultManager] removeItemAtPath:scriptDir error:NULL];
+        //        NSArray *directoryPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
+        //        NSString *documentDirectory = [directoryPaths objectAtIndex:0];
+        //        NSString *scriptDir = [documentDirectory stringByAppendingString:@"/IQScripts"];
+        //        [[NSFileManager defaultManager] removeItemAtPath:scriptDir error:NULL];
         [self removeAllScript];
         
         IQUITestCodeMakerCapabilities *capInstance = [[IQUITestCodeMakerCapabilities alloc]init];
