@@ -9,7 +9,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/lobster_geek)
 
-[中文文档](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/README_CN.md)
+[中文说明](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/README_CN.md)
 
 IQUITestCodeMaker is a modern and lightweight tool  for generating iOS UI test script codes automatically without lanuching Appium Desktop or using inspector.
 

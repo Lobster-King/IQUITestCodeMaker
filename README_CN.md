@@ -1,6 +1,6 @@
 # 总览
 
-[英文文档](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/README.md)
+[英文说明](https://github.com/Lobster-King/IQUITestCodeMaker/blob/master/README.md)
 
 IQUITestCodeMaker是一款轻量级的、无侵入性的自动生成UI测试脚本的工具，目前支持Appium相关脚本代码的自动生成，后续会支持对阿里Macaca相关主流框架脚本代码的自动生成。
 
