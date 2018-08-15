@@ -69,8 +69,21 @@
     if (!self.isConverting) {
         [self.eventQueue addObject:op];
     }
+    
+    if (op.locateStrategy == IQElementLocateByCoordinate) {
+        /*坐标*/
+        [self produceTapCodeUsingLocateStrategyWithOperationEvent:op];
+        return;
+    }
+    
+    /*identifier*/
     self.eventIndex++;
     NSString *tapCode = [NSString stringWithFormat:@"el%ld = driver.find_element(:accessibility_id, \"%@\")\nel%ld.click\n\n",self.eventIndex,op.identifier,self.eventIndex];
+    [self storeProductCode:tapCode];
+}
+
+- (void)produceTapCodeUsingLocateStrategyWithOperationEvent:(IQUITestOperationEvent *)op {
+    NSString *tapCode = [NSString stringWithFormat:@"Appium::TouchAction.new.tap(x: %f, y: %f).perform\n\n",op.touchPoint.x,op.touchPoint.y];
     [self storeProductCode:tapCode];
 }
 

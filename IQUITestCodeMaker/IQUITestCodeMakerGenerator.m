@@ -41,6 +41,16 @@ void IQTapTask(id target) {
     [persistent.factory produceCodeWithOperationEvent:op];
 }
 
+void IQTapTaskWithLocation(CGPoint point) {
+    IQUITestOperationEvent *op = [IQUITestOperationEvent new];
+    op.locateStrategy = IQElementLocateByCoordinate;
+    op.eventType = IQUIEventTap;
+    op.touchPoint = point;
+    
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
+    [persistent.factory produceCodeWithOperationEvent:op];
+}
+
 void IQSendKeyTask(id target) {
     IQUITestOperationEvent *op = [IQUITestOperationEvent new];
     op.eventType = IQUIEventSendKey;
@@ -567,6 +577,16 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     if ([NSStringFromClass([self class]) isEqualToString:@"BaseBottomBarItem"]) {
         id target = self;
         IQTapTask(target);
+    }
+    
+    if ([NSStringFromClass([self class])  isEqualToString:@"UIWebBrowserView"]) {
+//        __block UITouch *firstTouch = nil;
+        [touches enumerateObjectsUsingBlock:^(UITouch * _Nonnull obj, BOOL * _Nonnull stop) {
+            CGPoint point = [obj locationInView:[UIApplication sharedApplication].keyWindow];
+            IQTapTaskWithLocation(point);
+            *stop = YES;
+        }];
+        
     }
 }
 

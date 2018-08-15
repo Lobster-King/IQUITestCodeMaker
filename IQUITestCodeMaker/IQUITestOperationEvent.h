@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger,IQElementLocateStrategy ) {
 
 @interface IQUITestOperationEvent : NSObject
 
-@property (nonatomic, assign) IQElementLocateStrategy *locateStrategy;/*定位策略，默认IQElementLocateByIdentifier*/
+@property (nonatomic, assign) IQElementLocateStrategy locateStrategy;/*定位策略，默认IQElementLocateByIdentifier*/
 @property (nonatomic, assign) IQEventType eventType;
 @property (nonatomic, copy)   NSString *identifier;
 @property (nonatomic, copy)   NSString *value;
