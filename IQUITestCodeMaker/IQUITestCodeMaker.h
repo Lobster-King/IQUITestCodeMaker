@@ -32,6 +32,22 @@
 #define IQ_DEBUGBALL_ENABLED DEBUG
 #endif
 
+/*
+ 获取设备UDID注意事项：（用此工具，默认你身边没有Mac没有iTunes，没有iTools，没有Xcode等工具、算了撸主太懒还是先用蒲公英的吧）
+ 1.此功能不能上架Appstore！！！
+ 2.此功能不能上架Appstore！！！
+ 3.此功能不能上架Appstore！！！
+ 4.默认DEBUG开启，RELEASE关闭
+ */
+
+//#define IQ_UITEST_UDIDFETCH_ENABLED 0
+
+#ifdef IQ_UITEST_UDIDFETCH_ENABLED
+#define IQ_UDIDFETCH_ENABLED IQ_UITEST_UDIDFETCH_ENABLED
+#else
+#define IQ_UDIDFETCHL_ENABLED DEBUG
+#endif
+
 #define DebugView(prefixClsString) ([prefixClsString hasPrefix:@"IQUITestDebug"])
 #define WhiteListView(prefixClsString)  ([@[@"_UISnapshotWindow",@"UITableViewCellContentView",@"UISwitchModernVisualElement",@"UIFieldEditor",@"UITextField",@"UITextView"] containsObject:prefixClsString])
 

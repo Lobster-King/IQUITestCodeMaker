@@ -8,11 +8,23 @@
 
 #import "IQUITestDebugKeyValueCell.h"
 
+static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
+
+@interface IQUIRightBarButton : UIButton
+
+@end
+
+@implementation IQUIRightBarButton
+
+
+@end
+
 @interface IQUITestDebugKeyValueCell ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UITextField *textFiled;
 @property (nonatomic, strong) IQUITestDebugKVModel *kvModel;
+@property (nonatomic, strong) IQUIRightBarButton *rightBarButton;
 
 @end
 
@@ -38,6 +50,14 @@
     if ([viewModel.title isEqualToString:@"appiumVersion"] || [viewModel.title isEqualToString:@"platformName"] || [viewModel.title isEqualToString:@"automationName"]) {
         [self.textFiled setEnabled:NO];
     }
+    if ([viewModel.title isEqualToString:@"udid"]){
+        [self.contentView addSubview:self.rightBarButton];
+    }
+}
+
+- (void)rightBarButtonClicked {
+    NSURL *udidUrl = [NSURL URLWithString:kMobileConfigUrl];
+    [[UIApplication sharedApplication] openURL:udidUrl];
 }
 
 #pragma mark--UITextFiledDelegate--
@@ -65,6 +85,14 @@
         _textFiled.delegate = self;
     }
     return _textFiled;
+}
+- (IQUIRightBarButton *)rightBarButton {
+    if (!_rightBarButton){
+        _rightBarButton = [IQUIRightBarButton buttonWithType:UIButtonTypeDetailDisclosure];
+        _rightBarButton.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width - 60, 2, 60, 40);
+        [_rightBarButton addTarget:self action:@selector(rightBarButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _rightBarButton;
 }
 
 @end

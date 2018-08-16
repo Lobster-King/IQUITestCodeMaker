@@ -81,6 +81,7 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
         _platformName       = @"iOS";
         _platformVersion    = [UIDevice currentDevice].systemVersion;
         _deviceName         = @"iPhone X";
+        _udid               = @"";
         NSString *bundleName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
         _app                = [NSString stringWithFormat:@"/Users/lobster/Desktop/%@.app",bundleName];
         _serverAddress      = @"127.0.0.1";
