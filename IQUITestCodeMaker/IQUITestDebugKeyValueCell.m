@@ -41,6 +41,7 @@ static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
     self.backgroundColor = [UIColor clearColor];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.textFiled];
+    [self.contentView addSubview:self.rightBarButton];
 }
 
 - (void)updateViewWithViewModel:(IQUITestDebugKVModel *)viewModel {
@@ -50,8 +51,11 @@ static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
     if ([viewModel.title isEqualToString:@"appiumVersion"] || [viewModel.title isEqualToString:@"platformName"] || [viewModel.title isEqualToString:@"automationName"]) {
         [self.textFiled setEnabled:NO];
     }
+    
     if ([viewModel.title isEqualToString:@"udid"]){
-        [self.contentView addSubview:self.rightBarButton];
+        self.rightBarButton.hidden = NO;
+    } else {
+        self.rightBarButton.hidden = YES;
     }
 }
 
@@ -89,6 +93,7 @@ static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
 - (IQUIRightBarButton *)rightBarButton {
     if (!_rightBarButton){
         _rightBarButton = [IQUIRightBarButton buttonWithType:UIButtonTypeDetailDisclosure];
+        _rightBarButton.hidden = YES;
         _rightBarButton.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width - 60, 2, 60, 40);
         [_rightBarButton addTarget:self action:@selector(rightBarButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     }
