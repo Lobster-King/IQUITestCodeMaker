@@ -7,6 +7,7 @@
 //
 
 #import "IQUITestDebugKeyValueModel.h"
+#import "IQUITestCodeMakerGenerator.h"
 
 @class IQAppiumCapabilities;
 
@@ -21,7 +22,6 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 @interface IQUITestDebugKVModel ()
 
 @property (nonatomic, copy, readwrite) NSString *title;
-@property (nonatomic, copy, readwrite) NSString *placeholder;
 
 @end
 
@@ -61,5 +61,10 @@ static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
 @end
 
 @implementation IQUITestDebugKVModel
+
+- (void)updateLocalCap {
+    IQUITestCodeMakerGenerator *persistent = [IQUITestCodeMakerGenerator sharePersistent];
+    [persistent handleCapChangeTaskWithKey:self.title value:self.placeholder];
+}
 
 @end

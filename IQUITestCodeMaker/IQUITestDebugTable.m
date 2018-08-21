@@ -232,6 +232,9 @@
 
 #pragma mark--IQUITestDebugKeyValueDelegate--
 - (void)capMapHasChanged {
+    IQUITestDebugKeyValueModel *kvModel = self.dataArray[0];
+    [kvModel updateKVModelArray];
+    [self.debugTable reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
     [self.debugTable reloadSections:[NSIndexSet indexSetWithIndex:3] withRowAnimation:UITableViewRowAnimationFade];
 }
 #pragma mark--IQUITestDebugSwitchDelegate--

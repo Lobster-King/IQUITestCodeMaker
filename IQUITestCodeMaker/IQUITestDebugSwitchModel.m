@@ -11,8 +11,6 @@
 #import "IQUITestOperationEvent.h"
 #import "IQUITestCodeMakerFactory.h"
 
-static NSString *const kCapabilitiesKey = @"kCapabilitiesKey";
-
 @interface IQUITestDebugSwitchModel ()
 
 @property (nonatomic, copy, readwrite) NSString *title;

@@ -22,6 +22,7 @@
 @interface IQUITestDebugKVModel : NSObject
 
 @property (nonatomic, copy, readonly) NSString *title;
-@property (nonatomic, copy, readonly) NSString *placeholder;
+@property (nonatomic, copy) NSString *placeholder;
+- (void)updateLocalCap;
 
 @end

@@ -872,11 +872,13 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 }
 
 - (void)handleConvertTaskWithIdentifier:(NSString *)identifier {
-    NSDictionary *localCap = [[NSUserDefaults standardUserDefaults] objectForKey:kCapabilitiesKey];
-    NSMutableDictionary *mutaleCap = [NSMutableDictionary dictionaryWithDictionary:localCap];
-    [mutaleCap setValue:identifier forKey:@"appiumLanguage"];
-    [[NSUserDefaults standardUserDefaults] setObject:mutaleCap forKey:kCapabilitiesKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    if (identifier) {
+        NSDictionary *localCap = [[NSUserDefaults standardUserDefaults] objectForKey:kCapabilitiesKey];
+        NSMutableDictionary *mutaleCap = [NSMutableDictionary dictionaryWithDictionary:localCap];
+        [mutaleCap setValue:identifier forKey:@"appiumLanguage"];
+        [[NSUserDefaults standardUserDefaults] setObject:mutaleCap forKey:kCapabilitiesKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     
     IQUITestCodeMakerCapabilities *capInstance = [[IQUITestCodeMakerCapabilities alloc]init];
     capInstance.driverType = IQUITestDriverAppium;
@@ -891,6 +893,16 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     self.factory = factory;
     [self.factory convertEvetQueueToScript];
     [self restartServer];
+}
+
+- (void)handleCapChangeTaskWithKey:(NSString *)key value:(NSString *)value {
+    NSDictionary *capLocal = [[NSUserDefaults standardUserDefaults] objectForKey:kCapabilitiesKey];
+    NSMutableDictionary *mutableCap = [NSMutableDictionary dictionaryWithDictionary:capLocal];
+    [mutableCap setValue:value forKey:key];
+    [[NSUserDefaults standardUserDefaults] setObject:mutableCap forKey:kCapabilitiesKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    /*脚本重新生成*/
+    [self handleConvertTaskWithIdentifier:nil];
 }
 
 - (void)handleRecordControlEventWithState:(BOOL)state {

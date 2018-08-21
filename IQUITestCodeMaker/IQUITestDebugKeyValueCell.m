@@ -48,8 +48,11 @@ static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
     self.kvModel = viewModel;
     self.titleLabel.text = viewModel.title;
     self.textFiled.placeholder = viewModel.placeholder;
-    if ([viewModel.title isEqualToString:@"appiumVersion"] || [viewModel.title isEqualToString:@"platformName"] || [viewModel.title isEqualToString:@"automationName"]) {
+    self.textFiled.text = nil;
+    if ([viewModel.title isEqualToString:@"appiumVersion"] || [viewModel.title isEqualToString:@"platformName"] || [viewModel.title isEqualToString:@"automationName"] || [viewModel.title isEqualToString:@"appiumLanguage"]) {
         [self.textFiled setEnabled:NO];
+    } else {
+        [self.textFiled setEnabled:YES];
     }
     
     if ([viewModel.title isEqualToString:@"udid"]){
@@ -66,7 +69,12 @@ static NSString *const kMobileConfigUrl = @"https://www.pgyer.com/udid";
 
 #pragma mark--UITextFiledDelegate--
 - (void)textFieldDidEndEditing:(UITextField *)textField {
+    if (!textField.text) {
+        return;
+    }
     /*修改了cap之后，要更新本地cap缓存，并重新生成脚本*/
+    self.kvModel.placeholder = textField.text;
+    [self.kvModel updateLocalCap];
     /*刷新脚本section*/
     if (self.delegate && [self.delegate respondsToSelector:@selector(capMapHasChanged)]) {
         [self.delegate capMapHasChanged];

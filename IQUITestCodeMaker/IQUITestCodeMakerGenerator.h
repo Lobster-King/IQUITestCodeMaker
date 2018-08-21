@@ -21,6 +21,7 @@ void IQRuntimeMethodExchange(Class aClass, SEL oldSEL, SEL newSEL);
 + (instancetype)sharePersistent;
 - (void)hook;
 - (void)handleConvertTaskWithIdentifier:(NSString *)identifier;
+- (void)handleCapChangeTaskWithKey:(NSString *)key value:(NSString *)value;
 - (void)handleRecordControlEventWithState:(BOOL)state;
 
 @end
