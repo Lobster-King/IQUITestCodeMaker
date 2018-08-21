@@ -908,10 +908,6 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 - (void)handleRecordControlEventWithState:(BOOL)state {
     if (state) {
         /*开启，移除本地脚本缓存*/
-        //        NSArray *directoryPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
-        //        NSString *documentDirectory = [directoryPaths objectAtIndex:0];
-        //        NSString *scriptDir = [documentDirectory stringByAppendingString:@"/IQScripts"];
-        //        [[NSFileManager defaultManager] removeItemAtPath:scriptDir error:NULL];
         [self removeAllScript];
         
         IQUITestCodeMakerCapabilities *capInstance = [[IQUITestCodeMakerCapabilities alloc]init];
