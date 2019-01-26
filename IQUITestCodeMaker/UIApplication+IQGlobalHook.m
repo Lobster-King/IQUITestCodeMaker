@@ -29,9 +29,6 @@
         }
         
         [[NSNotificationCenter defaultCenter] addObserver:persistent selector:@selector(handleApplicationDidFinishLaunching) name:UIApplicationDidFinishLaunchingNotification object:nil];
-//        [[NSNotificationCenter defaultCenter]addObserver:persistent selector:@selector(handleApplicationWillResignActiveNotification) name:UIApplicationWillResignActiveNotification object:nil];
-//        [[NSNotificationCenter defaultCenter]addObserver:persistent selector:@selector(handleApplicationWillTerminateNotification) name:UIApplicationWillTerminateNotification object:nil];
-//        [[NSNotificationCenter defaultCenter]addObserver:persistent selector:@selector(handleApplicationDidReceiveMemoryWarningNotification) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
         
     });
     
