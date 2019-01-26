@@ -578,7 +578,7 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
         id target = self;
         IQTapTask(target);
     }
-    
+#warning location会因为不同m屏幕分辨率而导致不准确（后续可以进行不同屏幕分辨率进行坐标系自动转换）
     if ([NSStringFromClass([self class])  isEqualToString:@"UIWebBrowserView"]) {
 //        __block UITouch *firstTouch = nil;
         [touches enumerateObjectsUsingBlock:^(UITouch * _Nonnull obj, BOOL * _Nonnull stop) {
