@@ -1,14 +1,22 @@
 PODS:
+  - Aspects (1.4.1)
   - GCDWebServer (3.4.2):
     - GCDWebServer/Core (= 3.4.2)
   - GCDWebServer/Core (3.4.2)
 
 DEPENDENCIES:
+  - Aspects
   - GCDWebServer
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+    - GCDWebServer
+
 SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
 
-PODFILE CHECKSUM: b4eb569bff31e57ada618741f8e744e8ddbf9d36
+PODFILE CHECKSUM: 974ee9a8e6ee71330bc299cb84d54ef64818961c
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

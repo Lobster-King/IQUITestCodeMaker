@@ -16,6 +16,7 @@
 #import "IQUITestDebugBall.h"
 #import "IQUITestCodeMakerCapabilities.h"
 #import "GCDWebServer.h"
+#import <Aspects.h>
 
 static IQUITestCodeMakerGenerator *persistent = nil;
 static NSString *const kAutoSetIdentifier   = @"[A]";
@@ -840,7 +841,8 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
 }
 
 - (void)hook {
-    [UIApplication IQHook];
+//    [UIApplication IQHook];
+    [self aspectsHook];
     [UITableView IQHook];
     [UICollectionView IQHook];
     [UIGestureRecognizer IQHook];
@@ -848,6 +850,39 @@ static void ImplementTouchMethodsIfNeeded(Class viewClass, SEL aSelector)
     [UIImage IQHook];
     [UINavigationController IQHook];
     [UITextField IQHook];
+}
+
+- (void)aspectsHook {
+    [UIApplication aspect_hookSelector:@selector(sendAction:to:from:forEvent:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info,SEL action,id target,id sender, UIEvent *event){
+        if (DebugView(NSStringFromClass([sender class]))) {
+            return;
+        }
+        /*白名单，系统返回按钮已在should：popItem中拦截*/
+        if ([sender isKindOfClass:NSClassFromString(@"_UIButtonBarButton")]){
+            return;
+        }
+        IQTapTask(sender);
+    } error:NULL];
+    
+//    [UITableView aspect_hookSelector:@selector(setDelegate:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info,id<UITableViewDelegate> delegate){
+//
+//        if (![delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+//            return;
+//        }
+//
+//        [(NSObject *)delegate aspect_hookSelector:@selector(tableView:didSelectRowAtIndexPath:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info,UITableView *tableView,NSIndexPath *indexPath){
+//
+//        } error:NULL];
+//
+//        if (![delegate respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
+//            return;
+//        }
+//
+//        [(NSObject *)delegate aspect_hookSelector:@selector(tableView:cellForRowAtIndexPath:) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info,UITableView *tableView,NSIndexPath *indexPath){
+//            UITableViewCell *cell = [self ];
+//        } error:NULL];
+//
+//    } error:NULL];
 }
 
 - (void)handleApplicationWillResignActiveNotification {
